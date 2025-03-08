@@ -1,4 +1,4 @@
-import '../../../styles/FoodCategories';
+// import '../../../styles/FoodCategories';
 
 function FoodCategories() {
   return (

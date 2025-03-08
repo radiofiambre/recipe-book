@@ -1,8 +1,8 @@
-import '../../styles/Landing.scss';
+// import '../../styles/Landing.scss';
 
 function Landing() {
   return (
-    <div>Landing</div>
+    <main>Landing</main>
   )
 }
 

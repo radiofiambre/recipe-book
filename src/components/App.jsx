@@ -1,8 +1,15 @@
-import '../styles/App.scss';
+// import '../styles/App.scss';
+import Header from './App/Header';
+import Landing from './App/Landing';
+import Footer from './App/Footer';
 
 function App() {
   return (
-    <h1>Template</h1>
+    <>
+      <Header></Header>
+      <Landing></Landing>
+      <Footer></Footer>
+    </>
   );
 }
 

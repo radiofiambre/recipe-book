@@ -1,0 +1,33 @@
+@use '../abstracts' as *;
+
+body {
+  font-family: $text;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $dark-grey;
+}
+
+h1, h2 {
+  font-family: $title-main;
+  font-weight: map-get($font-weights, "bold");
+  margin-bottom: 0.8em;
+}
+
+h3, h4, h5, h6 {
+  font-family: $title-secondary;
+  font-weight: map-get($font-weights, "bold");
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}

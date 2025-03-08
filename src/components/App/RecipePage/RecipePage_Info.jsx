@@ -1,4 +1,4 @@
-import '../../../styles/RecipePage_Info.scss';
+// import '../../../styles/RecipePage_Info.scss';
 
 export default function RecipeInfo() {
   return (

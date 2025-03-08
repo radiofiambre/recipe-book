@@ -1,4 +1,4 @@
-import '../../../styles/RecipeArticle';
+// import '../../../styles/RecipeArticle';
 
 function Recipearticle() {
   return (

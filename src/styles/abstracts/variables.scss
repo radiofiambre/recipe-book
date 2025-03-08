@@ -1,0 +1,33 @@
+// FONTS
+
+$title-main: 'DM Serif Text', sans-serif;
+$title-secondary: 'Fira Sans', sans-serif;
+$text: 'Quicksand', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);
+
+$heading-scales: (
+  "h1": 2rem,
+  "h2": 1.75rem,
+  "h3": 1.5rem,
+  "h4": 1.25rem,
+  "h5": 1.1rem,
+  "h6": 1rem
+);
+
+
+
+// COLORS
+
+$orange: rgb(243 82 1);
+$light-blue: rgb(187 223 235);
+$yellow: rgb(244 171 17);
+$cream: rgb(243 237 223);
+$dark-green: rgb(1 41 33);
+$dark-grey: rgb(40, 40, 40);

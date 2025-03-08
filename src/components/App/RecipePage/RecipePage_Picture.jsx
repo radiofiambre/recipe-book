@@ -1,4 +1,4 @@
-import '../../../styles/RecipePage_Picture.scss';
+// import '../../../styles/RecipePage_Picture.scss';
 
 function RecipePicture() {
   return (
