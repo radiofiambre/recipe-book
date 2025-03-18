@@ -1,5 +1,4 @@
 // FONTS
-
 $title-main: 'DM Serif Text', sans-serif;
 $title-secondary: 'Fira Sans', sans-serif;
 $text: 'Quicksand', sans-serif;
@@ -22,12 +21,18 @@ $heading-scales: (
 );
 
 
-
 // COLORS
-
 $orange: rgb(243 82 1);
 $light-blue: rgb(187 223 235);
 $yellow: rgb(244 171 17);
 $cream: rgb(243 237 223);
 $dark-green: rgb(1 41 33);
 $dark-grey: rgb(40, 40, 40);
+
+
+// BREAKPOINTS
+$breakpoints: (
+  "mobile": 480px,
+  "tablet": 768px,
+  "desktop": 1024px
+);

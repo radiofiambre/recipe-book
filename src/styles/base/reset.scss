@@ -6,16 +6,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $cream;
 }
 
 html {
   font-size: 100%;
-  -webkit-text-size-adjust: 100%;
 }
 
 body {
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
+  margin: 10px;
   line-height: $line-height-base;
 }
 

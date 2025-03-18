@@ -1,4 +1,5 @@
 @use '../abstracts' as *;
+@use "sass:map";
 
 body {
   font-family: $text;
@@ -9,18 +10,18 @@ body {
 
 h1, h2 {
   font-family: $title-main;
-  font-weight: map-get($font-weights, "bold");
+  font-weight: map.get($font-weights, "bold");
   margin-bottom: 0.8em;
 }
 
 h3, h4, h5, h6 {
   font-family: $title-secondary;
-  font-weight: map-get($font-weights, "bold");
+  font-weight: map.get($font-weights, "bold");
   margin-bottom: 0.5em;
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 a {

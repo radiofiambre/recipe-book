@@ -1,1 +1,9 @@
-// @use "./variables.scss" as *;
+@use '../abstracts' as *;
+
+.header {
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  &_title {
+    color: $dark-green;
+  }
+}

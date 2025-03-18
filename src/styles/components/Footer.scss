@@ -1,1 +1,13 @@
-// @use "./variables.scss" as *;
+@use '../abstracts' as *;
+@use "sass:map";
+
+.footer {
+  text-align: center;
+  p {
+    font-size: 0.8em;
+  }
+  &_copy {
+    color: $dark-green;
+    font-weight: map.get($font-weights, "bold");
+  }
+}

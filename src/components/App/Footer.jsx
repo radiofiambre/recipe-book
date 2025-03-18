@@ -2,7 +2,9 @@
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <footer className="footer">
+      <p className="footer_copy">&copy; 2025 Recetario</p>
+    </footer>
   )
 }
 

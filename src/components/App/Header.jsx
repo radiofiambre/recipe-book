@@ -2,8 +2,8 @@
 
 function Header() {
   return (
-    <>
-    <h1>Recetario</h1>
+    <header className="header">
+    <h1 className="header_title">Recetario</h1>
     {/* <nav class="menu">
       <div class="menu-toggle">
         <span class="hamburger-icon">☰</span>
@@ -16,7 +16,7 @@ function Header() {
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav> */}
-    </>
+    </header>
   )
 }
 
