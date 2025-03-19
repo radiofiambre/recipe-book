@@ -14,7 +14,9 @@
     background-image: linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
-    ),
-    var(--bg-image);
+    ), var(--bg-image);
+    & p {
+      font-weight: bold;
+    }
   }
 }
