@@ -1,9 +1,11 @@
 // import '../../../styles/RecipeArticle';
 
-function Recipearticle() {
+function RecipeArticle() {
   return (
-    <div>Recipearticle</div>
+    <>
+      
+    </>
   )
 }
 
-export default Recipearticle
+export default RecipeArticle

@@ -1,8 +1,9 @@
 // import '../../../styles/RecipeList';
+import RecipeArticle from './RecipeArticle';
 
 function RecipeList() {
   return (
-    <div>RecipeList</div>
+    <RecipeArticle></RecipeArticle>
   )
 }
 

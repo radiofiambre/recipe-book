@@ -1,8 +1,13 @@
 // import '../../styles/Landing.scss';
+import FoodCategories from './Landing/FoodCategories';
+import RecipeList from './Landing/RecipeList';
 
 function Landing() {
   return (
-    <main>Landing</main>
+    <>
+      <FoodCategories></FoodCategories>
+      <RecipeList></RecipeList>
+    </>
   )
 }
 
