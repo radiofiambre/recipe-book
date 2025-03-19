@@ -1,8 +1,10 @@
 @use '../abstracts' as *;
+@use "sass:map";
+
 
 .FoodCategories_list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
   text-align: center;
   color: white;
@@ -12,11 +14,39 @@
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ), var(--bg-image);
     & p {
       font-weight: bold;
     }
+  }  
+}
+
+
+@media (min-width: map.get($breakpoints, "tablet")) {
+  .FoodCategories_list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (min-width: map.get($breakpoints, "notebook")) {
+  .FoodCategories_list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media (min-width: map.get($breakpoints, "large screens")) {
+  .FoodCategories_list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+@media (min-width: map.get($breakpoints, "extra large screens")) {
+  .FoodCategories_list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
