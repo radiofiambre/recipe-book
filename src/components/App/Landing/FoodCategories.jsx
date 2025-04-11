@@ -5,7 +5,7 @@ function FoodCategories() {
   const categories = [
     { name: 'Arroz', image: '/food_categories/rice.png'},
     { name: 'Bebidas y cócteles', image: '/food_categories/beverages.jpg'},
-    { name: 'Carnes y Aves', image: '/food_categories/meat.jpg'},
+    { name: 'Carnes y aves', image: '/food_categories/meat.jpg'},
     { name: 'Ensaladas', image: '/food_categories/salads.jpg'},
     { name: 'Huevos y patatas', image: '/food_categories/eggs.png'},
     { name: 'Legumbres y guisos', image: '/food_categories/legumes.jpg'},
