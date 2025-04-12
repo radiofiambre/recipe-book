@@ -8,9 +8,11 @@
   gap: 10px;
   text-align: center;
   color: white;
+
   & .FoodCategories_category {
     width: 100%;
     padding: 10px;
+    border-radius: 4px;
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(

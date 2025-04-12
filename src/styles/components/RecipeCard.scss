@@ -1,0 +1,43 @@
+@use '../abstracts' as *;
+
+.RecipeCard {
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 4px;
+
+  .RecipeCard_Img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 1;
+  }
+
+  .RecipeCard_textContainer {
+    padding: 0px 15px 10px 15px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+
+    .RecipeCard_textName {
+      color: $cream;
+    }
+
+    .RecipeCard_textCategory {
+      color: $cream;
+      font-size: 0.9em;
+    }
+  }
+}
