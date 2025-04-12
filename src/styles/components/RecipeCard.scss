@@ -1,17 +1,14 @@
 @use '../abstracts' as *;
 
 .RecipeCard {
-  margin: 10px;
   position: relative;
   display: inline-block;
   overflow: hidden;
   border-radius: 4px;
+  width: 100%;
 
   .RecipeCard_Img {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    display: block;
+    object-fit: fill;
   }
 
   &::after {

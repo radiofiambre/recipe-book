@@ -10,7 +10,11 @@ function RecipeList() {
 
   return (
     <section className="RecipeList">
-      {recipeCards}
+      <h2 className="RecipeList_title">Últimas recetas</h2>
+      <p className="RecipeList_p">Encuentra las recetas que se han creado recientemente.</p>
+      <ul className="RecipeList_container">
+        {recipeCards}
+      </ul>
     </section>
   )
 }
