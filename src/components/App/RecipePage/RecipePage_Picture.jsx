@@ -1,6 +1,6 @@
 function RecipePicture() {
   return (
-    <div>RecipePicture</div>
+    <img className="RecipePage_Picture_image" alt="" src=""/>
   )
 }
 
