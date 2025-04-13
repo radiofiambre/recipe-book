@@ -6,7 +6,7 @@ import RecipePage from './App/RecipePage';
 // import { useEffect, useState } from 'react';
 import { Route, Routes, matchPath, useLocation } from 'react-router-dom';
 
-import recipes from "../data/recipes";
+import recipeList from "../data/recipes";
 import foodCategories from "../data/foodCategories";
 
 function App() {
@@ -16,8 +16,8 @@ function App() {
   // CREAR RUTAS A CADA RECETA POR SU ID
   const {pathname} = useLocation()
   const routeData = matchPath("/recipe/:recipeId", pathname)
-  const recipeIdUrl = routeData ? routeData.params.recipeId : ""
-  const recipeInfo = recipes.find(recipe => recipe.id === recipeIdUrl)
+  const recipeId = routeData ? routeData.params.recipeId : ""
+  const recipeFromList = recipeList.find(recipe => recipe.id == recipeId)
 
   return (
     <>
@@ -26,11 +26,11 @@ function App() {
         <Route path="/" element={
           <>
             <FoodCategories foodCategories={foodCategories}></FoodCategories>
-            <RecipeList recipes={recipes}></RecipeList>
+            <RecipeList recipeList={recipeList}></RecipeList>
           </>
         }
         />
-        <Route path="/recipe/:recipeId" element={<RecipePage recipeInfo={recipeInfo}/>} />
+        <Route path="/recipe/:recipeId" element={<RecipePage recipe={recipeFromList}/>} />
       </Routes>
       <Footer/>
     </>

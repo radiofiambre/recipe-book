@@ -1,17 +1,18 @@
-import Footer from "./Footer"
-import Header from "./Header"
 import RecipePage_Picture from "./RecipePage/RecipePage_Picture"
 import RecipePage_Info from "./RecipePage/RecipePage_Info"
+import PropTypes from "prop-types"
 
-function RecipePage() {
+function RecipePage({recipe}) {
   return (
     <>
-      <Header/>
-      <RecipePage_Info/>
-      <RecipePage_Picture/>
-      <Footer/>
+      <RecipePage_Picture recipeImg={recipe.image}/>
+      <RecipePage_Info recipe={recipe}/>
     </>
   )
+}
+
+RecipePage.propTypes = {
+  recipe: PropTypes.object
 }
 
 export default RecipePage

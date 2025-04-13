@@ -1,9 +1,9 @@
 import RecipeCard from './RecipeList/RecipeCard';
 import PropTypes from "prop-types"
 
-function RecipeList({recipes}) {
+function RecipeList({recipeList}) {
 
-  const recipeCards = recipes.map(recipe =>
+  const recipeCards = recipeList.map(recipe =>
     <RecipeCard key={recipe.id} id={recipe.id} name={recipe.name} image={recipe.image} category={recipe.category}/>
   )
 
@@ -19,7 +19,7 @@ function RecipeList({recipes}) {
 }
 
 RecipeList.propTypes = {
-  recipes: PropTypes.array
+  recipeList: PropTypes.array
 }
 
 export default RecipeList
