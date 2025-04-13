@@ -1,4 +1,3 @@
-// import '../../../styles/RecipeList';
 import recipes from "../../../data/recipes";
 import RecipeCard from './RecipeCard';
 

@@ -1,7 +1,7 @@
-// import '../../../styles/RecipePage_Info.scss';
-
-export default function RecipeInfo() {
+function RecipePage_Info() {
   return (
-    <div>RecipeInfo</div>
+    <div>RecipePage_Info</div>
   )
 }
+
+export default RecipePage_Info

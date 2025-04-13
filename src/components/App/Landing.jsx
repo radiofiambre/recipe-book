@@ -1,4 +1,3 @@
-// import '../../styles/Landing.scss';
 import FoodCategories from './Landing/FoodCategories';
 import RecipeList from './Landing/RecipeList';
 

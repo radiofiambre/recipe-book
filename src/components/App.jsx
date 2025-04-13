@@ -1,4 +1,3 @@
-// import '../styles/App.scss';
 import Header from './App/Header';
 import Landing from './App/Landing';
 import Footer from './App/Footer';

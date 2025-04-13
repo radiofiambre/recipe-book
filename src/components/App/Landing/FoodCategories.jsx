@@ -1,4 +1,3 @@
-// import '../../../styles/FoodCategories';
 import categoriesList from "../../../data/foodCategories";
 
 function FoodCategories() {

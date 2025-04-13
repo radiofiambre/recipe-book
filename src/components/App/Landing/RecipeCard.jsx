@@ -1,4 +1,3 @@
-// import '../../../styles/RecipeCard';
 import PropTypes from "prop-types"
 
 function RecipeCard(props) {
