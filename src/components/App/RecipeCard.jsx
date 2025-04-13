@@ -17,7 +17,7 @@ function RecipeCard(props) {
 RecipeCard.propTypes = {
   image: PropTypes.string,
   name: PropTypes.string,
-  category: PropTypes.string
+  category: PropTypes.array
 }
 
 export default RecipeCard

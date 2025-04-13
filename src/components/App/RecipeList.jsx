@@ -1,4 +1,4 @@
-import recipes from "../../../data/recipes";
+import recipes from "../../data/recipes";
 import RecipeCard from './RecipeCard';
 
 function RecipeList() {

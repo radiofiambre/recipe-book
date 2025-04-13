@@ -1,4 +1,4 @@
-import categoriesList from "../../../data/foodCategories";
+import categoriesList from "../../data/foodCategories";
 
 function FoodCategories() {
   return (

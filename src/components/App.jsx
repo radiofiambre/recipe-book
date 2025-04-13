@@ -1,5 +1,6 @@
 import Header from './App/Header';
-import Landing from './App/Landing';
+import FoodCategories from './App/FoodCategories';
+import RecipeList from './App/RecipeList';
 import Footer from './App/Footer';
 import RecipePage from './App/RecipePage/RecipePage';
 // import { useEffect, useState } from 'react';
@@ -19,12 +20,18 @@ function App() {
 
   return (
     <>
-      <Header></Header>
+      <Header />
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={
+          <>
+            <FoodCategories></FoodCategories>
+            <RecipeList></RecipeList>
+          </>
+        }
+        />
         <Route path="/recipe/:recipeId" element={<RecipePage recipeInfo={recipeInfo}/>} />
       </Routes>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }
