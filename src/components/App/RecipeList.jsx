@@ -1,5 +1,4 @@
-// import recipes from "../../data/recipes";
-import RecipeCard from './RecipeCard';
+import RecipeCard from './RecipeList/RecipeCard';
 import PropTypes from "prop-types"
 
 function RecipeList({recipes}) {

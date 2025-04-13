@@ -2,11 +2,12 @@ import Header from './App/Header';
 import FoodCategories from './App/FoodCategories';
 import RecipeList from './App/RecipeList';
 import Footer from './App/Footer';
-import RecipePage from './App/RecipePage/RecipePage';
+import RecipePage from './App/RecipePage';
 // import { useEffect, useState } from 'react';
 import { Route, Routes, matchPath, useLocation } from 'react-router-dom';
 
 import recipes from "../data/recipes";
+import foodCategories from "../data/foodCategories";
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={
           <>
-            <FoodCategories></FoodCategories>
+            <FoodCategories foodCategories={foodCategories}></FoodCategories>
             <RecipeList recipes={recipes}></RecipeList>
           </>
         }
