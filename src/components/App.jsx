@@ -20,18 +20,18 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header/>
       <Routes>
         <Route path="/" element={
           <>
             <FoodCategories></FoodCategories>
-            <RecipeList></RecipeList>
+            <RecipeList recipes={recipes}></RecipeList>
           </>
         }
         />
         <Route path="/recipe/:recipeId" element={<RecipePage recipeInfo={recipeInfo}/>} />
       </Routes>
-      <Footer />
+      <Footer/>
     </>
   );
 }
