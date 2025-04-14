@@ -17,9 +17,9 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   text-align: center;
-  color: $cream;
 
   & .FoodCategories_category {
+    list-style: none;
     width: 100%;
     padding: 10px;
     border-radius: 4px;
@@ -31,6 +31,7 @@
     ), var(--bg-image);
     & p {
       font-weight: bold;
+      color: $cream;
     }
   }  
 }

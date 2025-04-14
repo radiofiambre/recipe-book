@@ -6,7 +6,7 @@ function RecipeCard(props) {
   const {id, name, image, category} = props
 
   return (
-    <li>
+    <li className="RecipeCard_listElement">
       <Link to={`/recipe/${id}`}>
       <article className="RecipeCard">
         <img className="RecipeCard_Img" alt={name} src={image}/>

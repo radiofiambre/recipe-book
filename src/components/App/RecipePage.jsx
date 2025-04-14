@@ -1,13 +1,44 @@
-import RecipePage_Picture from "./RecipePage/RecipePage_Picture"
-import RecipePage_Info from "./RecipePage/RecipePage_Info"
 import PropTypes from "prop-types"
 
 function RecipePage({recipe}) {
+
+  const {image, name, difficulty, servings, preparationTime, ingredients, directions, notes, source, isFavorite, cookedTimes} = recipe
+
   return (
-    <>
-      <RecipePage_Picture recipeImg={recipe.image}/>
-      <RecipePage_Info recipe={recipe}/>
-    </>
+    <div className="RecipePage">
+      <div className="RecipePage_top">
+        <section className="RecipePage_section mainInfo">
+          <h2>{name}</h2>
+          <h4 className="mainInfo_details">
+            <span>{preparationTime}</span>|<span>{servings}</span>|<span>{difficulty}</span>
+          </h4>
+          <p className="mainInfo_source">Fuente: {source}</p>
+        </section>
+        <img className="image" alt="" src={image}/>
+      </div>
+      <div className="RecipePage_bottom">
+          <section className="RecipePage_section">
+            <h3>Ingredientes</h3>
+            <ul>
+              {ingredients.map((step, index) => (
+                <li key={index}>{step}</li>
+              ))}
+            </ul>
+          </section>
+          <section className="RecipePage_section">
+            <h3>Pasos</h3>
+            <ol>
+              {directions.map((step, index) => (
+                <li key={index}>{step}</li>
+              ))}
+            </ol>
+          </section>
+          <section className="RecipePage_section">
+            <h3>Notas</h3>
+            <p>{notes}</p>
+          </section>
+      </div>
+    </div>
   )
 }
 

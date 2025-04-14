@@ -1,1 +1,126 @@
 @use '../abstracts' as *;
+@use "sass:map";
+
+.RecipePage {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+
+  &_section {
+    padding: 30px 10px;
+  }
+  
+  &_top {
+    margin-top: 40px;
+    display: grid;
+    margin-bottom: 40px;
+  }
+
+  &_bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "ingredients"
+      "steps"
+      "notes";
+
+    .ingredients {
+      grid-area: ingredients;
+    }
+
+    .steps {
+      grid-area: steps;
+    }
+
+    .notes {
+      grid-area: notes;
+    }
+  }
+}
+
+
+.mainInfo {
+  text-align: center;
+
+  & span {
+    margin: 5%;
+  }
+
+  &_source {
+    padding-top: 30px;
+    font-size: 0.7em;
+  }
+}
+
+.image {
+  border-radius: 10px;
+}
+
+
+@media (min-width: map.get($breakpoints, "tablet")) {
+  .RecipePage {
+    &_section {
+      padding: 15px 30px;
+    }
+
+    &_top {
+      grid-template-columns: 2fr 3fr;
+    }
+    &_bottom {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+        "ingredients steps"
+        "notes steps";
+    }
+  }
+  
+  
+  .mainInfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    & span {
+      margin: 5%;
+    }
+  
+    &_source {
+      padding-top: 30px;
+      font-size: 0.7em;
+    }
+  }
+  
+  .image {
+    margin: 0px 15px;
+    border-radius: 10px;
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+
+@media (min-width: map.get($breakpoints, "notebook")) {
+  .RecipePage {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+
+@media (min-width: map.get($breakpoints, "large screens")) {
+  .RecipePage {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+
+@media (min-width: map.get($breakpoints, "extra large screens")) {
+  .RecipePage {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}

@@ -16,6 +16,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  list-style: none;
 }
 
 @media (min-width: map.get($breakpoints, "tablet")) {

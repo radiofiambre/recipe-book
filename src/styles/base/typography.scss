@@ -12,16 +12,19 @@ h1, h2 {
   font-family: $title-main;
   font-weight: map.get($font-weights, "bold");
   margin-bottom: 0.8em;
+  color: $dark-green;
 }
 
 h3, h4, h5, h6 {
   font-family: $title-secondary;
   font-weight: map.get($font-weights, "bold");
   margin-bottom: 0.5em;
+  color: $dark-green;
 }
 
 p {
   margin-bottom: 0.2rem;
+  color: $dark-grey;
 }
 
 a {
