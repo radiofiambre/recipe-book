@@ -72,6 +72,24 @@ const recipes = [
     isFavorite: false,
     cookedTimes: 2
   },
+  {
+    id: 5,
+    name: "Uvas asadas con jamón y burrata",
+    image: "/recipes/uvas_asadas_con_jamon_y_burrata.png",
+    categories: ["Ensaladas"],
+    difficulty: "Fácil",
+    mealTime: ["Comida", "Cena"],
+    servings: "1 ración",
+    preparationTime: "10 min",
+    ingredients: ["Burrata", "Uvas", "Jamón ibérico", "Pistachos", "Tomillo fresco", "Aceite de oliva", "Vinagre de módena"],
+    directions: [
+      "Salpimentar las las uvas con un chorrito de vinagre de módena y de aceite de oliva.",
+      "Salsea con el juguito que desprenden las uvas al asar.", "Sirve tibio y acompaña de pan."],
+    notes: "",
+    source: "https://www.instagram.com/p/C0ZxvX8L9pi/",
+    isFavorite: false,
+    cookedTimes: 0
+  },
 ];
 
 export default recipes;

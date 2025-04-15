@@ -6,8 +6,8 @@ function RecipeCard(props) {
   const { id, name, image, categories } = props;
 
   return (
-    <li className="RecipeCard_listElement">
-      <Link to={`/recipe/${id}/${createSlug(name)}`}>
+    <Link to={`/recipe/${id}/${createSlug(name)}`}>
+      <li className="RecipeCard_listElement">
         <article className="RecipeCard">
           <img className="RecipeCard_Img" alt={name} src={image} />
           <div className="RecipeCard_textContainer">
@@ -22,8 +22,8 @@ function RecipeCard(props) {
             <h3 className="RecipeCard_textName">{name}</h3>
           </div>
         </article>
-      </Link>
-    </li>
+      </li>
+    </Link>
   );
 }
 

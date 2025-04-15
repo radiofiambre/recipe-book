@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.CategoryPage h2 {
+  margin-bottom: 0em;
+  text-align: center;
+  font-weight: bold;
+  color: $orange;
+}
+
+.CategoryPage_container {
+  margin: 30px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  list-style: none;
+}
