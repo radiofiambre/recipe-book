@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 function RecipePage({recipe}) {
 
-  const {image, name, difficulty, servings, preparationTime, ingredients, directions, notes, source, isFavorite, cookedTimes} = recipe
+  const {image, name, difficulty, servings, preparationTime, ingredients, directions, notes, source} = recipe
 
   return (
     <div className="RecipePage">
@@ -12,7 +12,7 @@ function RecipePage({recipe}) {
           <h4 className="mainInfo_details">
             <span>{preparationTime}</span>|<span>{servings}</span>|<span>{difficulty}</span>
           </h4>
-          <p className="mainInfo_source">Fuente: {source}</p>
+          <p className="mainInfo_source">Fuente: <a className="url" href="{source}">{source}</a></p>
         </section>
         <img className="image" alt="" src={image}/>
       </div>

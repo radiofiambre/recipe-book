@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 function RecipeList({recipeList}) {
 
   const recipeCards = recipeList.map(recipe =>
-    <RecipeCard key={recipe.id} id={recipe.id} name={recipe.name} image={recipe.image} category={recipe.category}/>
+    <RecipeCard key={recipe.id} id={recipe.id} name={recipe.name} image={recipe.image} categories={recipe.categories}/>
   )
 
   return (
