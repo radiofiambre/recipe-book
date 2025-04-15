@@ -1,4 +1,6 @@
 import PropTypes from "prop-types"
+import { Link } from "react-router-dom";
+import { createSlug } from "../../data/createSlug";
 
 function FoodCategories({foodCategories}) {
   return (
@@ -7,9 +9,11 @@ function FoodCategories({foodCategories}) {
       <p className="FoodCategories_p">Recetas agrupadas por categorías alimenticias.</p>
       <ul className="FoodCategories_container">
         {foodCategories.map((category, index) => (
-          <li key={index} className="FoodCategories_category" style={{ "--bg-image": `url(${category.image})` }}>
-            <p>{category.name}</p>
-          </li>
+          <Link to={`/category/${createSlug(category.name)}`} key={index}>
+            <li className="FoodCategories_category" style={{ "--bg-image": `url(${category.image})` }}>
+              <p>{category.name}</p>
+            </li>
+          </Link>
         ))}
       </ul>
     </section>
