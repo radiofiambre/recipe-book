@@ -22,7 +22,7 @@ function App() {
   const categoryFromList = foodCategories.find(category => category.name == categoryName)
 
   // CREAR RUTAS A CADA RECETA POR SU ID
-  const recipeRoute = matchPath("/recipe/:recipeId", pathname)
+  const recipeRoute = matchPath("/recipe/:recipeId/:recipeName", pathname)
   const recipeId = recipeRoute ? recipeRoute.params.recipeId : ""
   const recipeFromList = recipeList.find(recipe => recipe.id == recipeId)
 
@@ -38,7 +38,7 @@ function App() {
         }
         />
         <Route path="/category/:category" element={<CategoryPage category={categoryFromList} />}/>
-        <Route path="/recipe/:recipeId" element={<RecipePage recipe={recipeFromList}/>} />
+        <Route path="/recipe/:recipeId/:recipeName" element={<RecipePage recipe={recipeFromList}/>} />
       </Routes>
       <Footer/>
     </>

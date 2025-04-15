@@ -1,12 +1,13 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import createSlug from "../../../data/createSlug";
 
 function RecipeCard(props) {
   const { id, name, image, categories } = props;
 
   return (
     <li className="RecipeCard_listElement">
-      <Link to={`/recipe/${id}`}>
+      <Link to={`/recipe/${id}/${createSlug(name)}`}>
         <article className="RecipeCard">
           <img className="RecipeCard_Img" alt={name} src={image} />
           <div className="RecipeCard_textContainer">

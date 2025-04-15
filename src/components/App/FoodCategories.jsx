@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import { Link } from "react-router-dom";
-import { createSlug } from "../../data/createSlug";
+import createSlug from "../../data/createSlug";
 
 function FoodCategories({foodCategories}) {
   return (
