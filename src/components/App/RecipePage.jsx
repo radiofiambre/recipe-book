@@ -12,7 +12,7 @@ function RecipePage({recipe}) {
           <h4 className="mainInfo_details">
             <span>{preparationTime}</span>|<span>{servings}</span>|<span>{difficulty}</span>
           </h4>
-          <p className="mainInfo_source">Fuente: <a className="url" href="{source}">{source}</a></p>
+          <p className="mainInfo_source">Fuente: <a className="url" href={source}>{source}</a></p>
         </section>
         <img className="image" alt="" src={image}/>
       </div>
@@ -35,7 +35,9 @@ function RecipePage({recipe}) {
           </section>
           <section className="RecipePage_section">
             <h3>Notas</h3>
-            <p>{notes}</p>
+            {notes.map((note, index) => (
+                <p key={index}>{note}</p>
+              ))}
           </section>
       </div>
     </div>
