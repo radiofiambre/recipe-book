@@ -1,22 +1,26 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function FilterByName({ recipeName, setRecipeName }) {
-
   const handleInput = (event) => {
-    setRecipeName(event.target.value.toLowerCase())
-  }
+    setRecipeName(event.target.value.toLowerCase());
+  };
 
   return (
-    <div className="filterContainer">
+    <>
       <label htmlFor="">Nombre:</label>
-      <input type="text" value={recipeName} placeholder="Busca una receta..." onChange={handleInput}/>
-    </div>
-  )
+      <input
+        type="text"
+        value={recipeName}
+        placeholder="Busca una receta..."
+        onChange={handleInput}
+      />
+    </>
+  );
 }
 
 FilterByName.propTypes = {
   recipeName: PropTypes.string,
-  setRecipeName: PropTypes.func
-}
+  setRecipeName: PropTypes.func,
+};
 
-export default FilterByName
+export default FilterByName;

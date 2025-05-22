@@ -1,7 +1,26 @@
-function FilterByIngredients() {
+import PropTypes from "prop-types";
+
+function FilterByIngredients({ ingredients, setIngredients }) {
+  const handleInput = (event) => {
+    setIngredients(event.target.value.toLowerCase());
+  };
+
   return (
-    <div>FilterByIngredients</div>
-  )
+    <>
+      <label htmlFor="">Ingredientes:</label>
+      <input
+        type="text"
+        value={ingredients}
+        placeholder="Busca por ingredientes..."
+        onChange={handleInput}
+      />
+    </>
+  );
 }
 
-export default FilterByIngredients
+FilterByIngredients.propTypes = {
+  ingredients: PropTypes.string,
+  setIngredients: PropTypes.func,
+};
+
+export default FilterByIngredients;
