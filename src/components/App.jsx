@@ -19,23 +19,32 @@ function App() {
   const [recipeList, setRecipeList] = useState(recipesData);
   const [foodCategoriesList, setFoodCategoriesList] = useState(foodCategoriesData);
   // Filter elements
-  const [ingredients, setIngredients] = useState("");
   const [recipeName, setRecipeName] = useState("");
+  const [category, setCategory] = useState("")
+  const [mealTime, setMealTime] = useState("")
+  const [difficulty, setDifficulty] = useState("")
+  const [prepTime, setPrepTime] = useState("")
+  const [ingredients, setIngredients] = useState("");
   const [favorite, setFavorite] = useState("all");
 
   // FILTROS
   const filterRecipes = recipeList
-    // nombre
+    // name
     .filter((recipe) =>
       normalizeSearchText(recipe.name).includes(normalizeSearchText(recipeName))
     )
-    //ingrediente
+    // category
+    .filter((recipe) => recipe.categories.includes(category))
+    // mealTime
+    // difficulty
+    // prepTime
+    // ingredients
     .filter((recipe) =>
       normalizeSearchText(recipe.ingredients.join(", ")).includes(
         normalizeSearchText(ingredients)
       )
     )
-    //favorita
+    // favorite
     .filter((recipe) => {
       if (favorite === "favorite") return recipe.isFavorite === true;
       if (favorite === "not-favorite") return recipe.isFavorite === false;
@@ -70,6 +79,7 @@ function App() {
                 foodCategoriesList={foodCategoriesList}
                 recipeName={recipeName}
                 setRecipeName={setRecipeName}
+                setCategory={setCategory}
                 ingredients={ingredients}
                 setIngredients={setIngredients}
                 favorite={favorite}

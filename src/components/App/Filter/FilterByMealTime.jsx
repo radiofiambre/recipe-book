@@ -1,4 +1,3 @@
-import createSlug from "../../../data/createSlug";
 import mealTimesData from "../../../data/mealTimesData";
 
 function FilterByMealTime() {

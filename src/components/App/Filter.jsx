@@ -13,6 +13,7 @@ function Filter(props) {
     foodCategoriesList,
     recipeName,
     setRecipeName,
+    setCategory,
     ingredients,
     setIngredients,
     favorite,
@@ -31,7 +32,7 @@ function Filter(props) {
           <FilterByName recipeName={recipeName} setRecipeName={setRecipeName} />
         </div>
         <div className="Filter_container">
-          <FilterByCategory foodCategoriesList={foodCategoriesList} />
+          <FilterByCategory foodCategoriesList={foodCategoriesList} setCategory={setCategory}/>
         </div>
         <div className="Filter_container">
           <FilterByMealTime />
@@ -60,6 +61,7 @@ Filter.propTypes = {
   foodCategoriesList: PropTypes.array,
   recipeName: PropTypes.string,
   setRecipeName: PropTypes.func,
+  setCategory: PropTypes.func,
   ingredients: PropTypes.string,
   setIngredients: PropTypes.func,
   favorite: PropTypes.string,
