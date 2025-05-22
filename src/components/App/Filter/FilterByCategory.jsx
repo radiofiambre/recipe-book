@@ -7,13 +7,13 @@ function FilterByCategory({ foodCategoriesList, setCategory }) {
     </option>
   ));
 
-  const handleSelect = (event) => setCategory(event.target.value)
+  const handleSelect = (event) => setCategory(event.target.value);
 
   return (
     <>
       <label htmlFor="">Categoría:</label>
-      <select name="" id="" onChange={handleSelect}>
-        <option value="">Selecciona</option>
+      <select name="" defaultValue="all" onChange={handleSelect}>
+        <option value="all">Todas</option>
         {allCategories}
       </select>
     </>
@@ -22,7 +22,7 @@ function FilterByCategory({ foodCategoriesList, setCategory }) {
 
 FilterByCategory.propTypes = {
   foodCategoriesList: PropTypes.array,
-  setCategory: PropTypes.category
+  setCategory: PropTypes.func
 };
 
 export default FilterByCategory;

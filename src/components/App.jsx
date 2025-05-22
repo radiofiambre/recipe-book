@@ -20,8 +20,8 @@ function App() {
   const [foodCategoriesList, setFoodCategoriesList] = useState(foodCategoriesData);
   // Filter elements
   const [recipeName, setRecipeName] = useState("");
-  const [category, setCategory] = useState("")
-  const [mealTime, setMealTime] = useState("")
+  const [category, setCategory] = useState("all")
+  const [mealTime, setMealTime] = useState("all")
   const [difficulty, setDifficulty] = useState("")
   const [prepTime, setPrepTime] = useState("")
   const [ingredients, setIngredients] = useState("");
@@ -34,8 +34,9 @@ function App() {
       normalizeSearchText(recipe.name).includes(normalizeSearchText(recipeName))
     )
     // category
-    .filter((recipe) => recipe.categories.includes(category))
+    .filter((recipe) => category === "all" ? true : recipe.categories.includes(category))
     // mealTime
+    .filter((recipe) => mealTime === "all" ? true : recipe.mealTimes.includes(mealTime))
     // difficulty
     // prepTime
     // ingredients
@@ -80,6 +81,7 @@ function App() {
                 recipeName={recipeName}
                 setRecipeName={setRecipeName}
                 setCategory={setCategory}
+                setMealTime={setMealTime}
                 ingredients={ingredients}
                 setIngredients={setIngredients}
                 favorite={favorite}
