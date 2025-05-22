@@ -12,6 +12,7 @@ function FilterByDifficulty() {
     <>
       <label htmlFor="">Dificultad:</label>
       <select name="" id="">
+        <option value="">Selecciona</option>
         {allDifficultyLevels}
       </select>
     </>

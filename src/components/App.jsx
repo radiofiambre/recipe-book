@@ -20,17 +20,26 @@ function App() {
   const [foodCategories, setFoodCategories] = useState(foodCategoriesData);
   const [ingredients, setIngredients] = useState("");
   const [recipeName, setRecipeName] = useState("");
+  const [favorite, setFavorite] = useState("all");
 
   // FILTROS
   const filterRecipes = recipeList
+    // nombre
     .filter((recipe) =>
       normalizeSearchText(recipe.name).includes(normalizeSearchText(recipeName))
     )
+    //ingrediente
     .filter((recipe) =>
       normalizeSearchText(recipe.ingredients.join(", ")).includes(
         normalizeSearchText(ingredients)
       )
-    );
+    )
+    //favorita
+    .filter((recipe) => {
+      if (favorite === "favorite") return recipe.isFavorite === true;
+      if (favorite === "not-favorite") return recipe.isFavorite === false;
+      return true;
+    });
 
   // RUTAS
   const { pathname } = useLocation();
@@ -62,6 +71,8 @@ function App() {
                 setRecipeName={setRecipeName}
                 ingredients={ingredients}
                 setIngredients={setIngredients}
+                favorite={favorite}
+                setFavorite={setFavorite}
               />
               <RecipeList recipeList={filterRecipes} />
             </>

@@ -3,6 +3,7 @@ function FilterByPrepTime() {
     <>
       <label htmlFor="">Tiempo:</label>
       <select name="" id="">
+        <option value="">Selecciona</option>
         <option value="lt-15">&lt; 15 minutos</option>
         <option value="lt-30">&lt; 30 minutos</option>
         <option value="lt-60">&lt; 1 hora</option>

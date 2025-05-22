@@ -5,10 +5,19 @@ import FilterByDifficulty from "./Filter/FilterByDifficulty";
 import FilterByPrepTime from "./Filter/FilterByPrepTime";
 import FilterByIngredients from "./Filter/FilterByIngredients";
 import FilterByFavorites from "./Filter/FilterByFavorites";
+
 import PropTypes from "prop-types";
 
 function Filter(props) {
-  const { foodCategories, recipeName, setRecipeName, ingredients, setIngredients } = props;
+  const {
+    foodCategories,
+    recipeName,
+    setRecipeName,
+    ingredients,
+    setIngredients,
+    favorite,
+    setFavorite,
+  } = props;
 
   return (
     <section className="Filter">
@@ -34,10 +43,13 @@ function Filter(props) {
           <FilterByPrepTime />
         </div>
         <div className="Filter_container">
-          <FilterByIngredients ingredients={ingredients} setIngredients={setIngredients}/>
+          <FilterByIngredients
+            ingredients={ingredients}
+            setIngredients={setIngredients}
+          />
         </div>
         <div className="Filter_container">
-          <FilterByFavorites />
+          <FilterByFavorites favorite={favorite} setFavorite={setFavorite} />
         </div>
       </form>
     </section>
@@ -49,7 +61,9 @@ Filter.propTypes = {
   recipeName: PropTypes.string,
   setRecipeName: PropTypes.func,
   ingredients: PropTypes.string,
-  setIngredients: PropTypes.func
+  setIngredients: PropTypes.func,
+  favorite: PropTypes.string,
+  setFavorite: PropTypes.func
 };
 
 export default Filter;

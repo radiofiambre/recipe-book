@@ -12,6 +12,7 @@ function FilterByCategory({ foodCategories }) {
     <>
       <label htmlFor="">Categoría:</label>
       <select name="" id="">
+        <option value="">Selecciona</option>
         {allCategories}
       </select>
     </>

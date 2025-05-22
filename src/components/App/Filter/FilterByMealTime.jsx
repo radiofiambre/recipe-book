@@ -13,6 +13,7 @@ function FilterByMealTime() {
       <>
         <label htmlFor="">Momento del día:</label>
         <select name="" id="">
+          <option value="">Selecciona</option>
           {allMealTimes}
         </select>
     </>
