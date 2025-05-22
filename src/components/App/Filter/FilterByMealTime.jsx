@@ -1,10 +1,10 @@
 import createSlug from "../../../data/createSlug";
-import mealTimes from "../../../data/mealTimes";
+import mealTimesData from "../../../data/mealTimesData";
 
 function FilterByMealTime() {
 
-      const allMealTimes = mealTimes.map((mealTime, index) => (
-    <option key={index} value={createSlug(mealTime.name)}>
+      const allMealTimes = mealTimesData.map((mealTime, index) => (
+    <option key={index} value={mealTime.name}>
       {mealTime.name}
     </option>
   ));

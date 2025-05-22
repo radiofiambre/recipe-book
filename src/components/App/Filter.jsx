@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 
 function Filter(props) {
   const {
-    foodCategories,
+    foodCategoriesList,
     recipeName,
     setRecipeName,
     ingredients,
@@ -31,7 +31,7 @@ function Filter(props) {
           <FilterByName recipeName={recipeName} setRecipeName={setRecipeName} />
         </div>
         <div className="Filter_container">
-          <FilterByCategory foodCategories={foodCategories} />
+          <FilterByCategory foodCategoriesList={foodCategoriesList} />
         </div>
         <div className="Filter_container">
           <FilterByMealTime />
@@ -57,7 +57,7 @@ function Filter(props) {
 }
 
 Filter.propTypes = {
-  foodCategories: PropTypes.array,
+  foodCategoriesList: PropTypes.array,
   recipeName: PropTypes.string,
   setRecipeName: PropTypes.func,
   ingredients: PropTypes.string,

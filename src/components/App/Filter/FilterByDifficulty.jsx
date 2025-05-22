@@ -1,8 +1,8 @@
 import createSlug from "../../../data/createSlug";
-import difficultyLevels from "../../../data/difficultyLevels";
+import difficultyLevelsData from "../../../data/difficultyLevelsData";
 
 function FilterByDifficulty() {
-  const allDifficultyLevels = difficultyLevels.map((difficultyLevel, index) => (
+  const allDifficultyLevels = difficultyLevelsData.map((difficultyLevel, index) => (
     <option key={index} value={createSlug(difficultyLevel.name)}>
       {difficultyLevel.name}
     </option>

@@ -9,15 +9,16 @@ import CategoryPage from "./App/CategoryPage";
 import { useState } from "react";
 import { Route, Routes, matchPath, useLocation } from "react-router-dom";
 
-import recipeListData from "../data/recipes";
-import foodCategoriesData from "../data/foodCategories";
-
+import recipesData from "../data/recipesData";
+import foodCategoriesData from "../data/foodCategoriesData";
 import createSlug from "../data/createSlug";
 import normalizeSearchText from "../data/normalizeSearchText";
 
 function App() {
-  const [recipeList, setRecipeList] = useState(recipeListData);
-  const [foodCategories, setFoodCategories] = useState(foodCategoriesData);
+  //Display elements
+  const [recipeList, setRecipeList] = useState(recipesData);
+  const [foodCategoriesList, setFoodCategoriesList] = useState(foodCategoriesData);
+  // Filter elements
   const [ingredients, setIngredients] = useState("");
   const [recipeName, setRecipeName] = useState("");
   const [favorite, setFavorite] = useState("all");
@@ -47,7 +48,7 @@ function App() {
   // RUTA DE CATEGORÍAS
   const categoryRoute = matchPath("/category/:categoryName", pathname);
   const categoryName = categoryRoute ? categoryRoute.params.categoryName : "";
-  const categoryFromList = foodCategories.find(
+  const categoryFromList = foodCategoriesData.find(
     (category) => createSlug(category.name) == categoryName
   );
 
@@ -64,9 +65,9 @@ function App() {
           path="/"
           element={
             <>
-              <FoodCategories foodCategories={foodCategories} />
+              <FoodCategories foodCategoriesList={foodCategoriesList} />
               <Filter
-                foodCategories={foodCategories}
+                foodCategoriesList={foodCategoriesList}
                 recipeName={recipeName}
                 setRecipeName={setRecipeName}
                 ingredients={ingredients}

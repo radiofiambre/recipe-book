@@ -2,9 +2,9 @@ import PropTypes from "prop-types"
 import { Link } from "react-router-dom";
 import createSlug from "../../data/createSlug";
 
-function FoodCategories({foodCategories}) {
+function FoodCategories({foodCategoriesList}) {
 
-  const allCategories = foodCategories.map((category, index) => (
+  const allCategories = foodCategoriesList.map((category, index) => (
     <Link to={`/category/${createSlug(category.name)}`} key={index}>
       <li className="FoodCategories_category" style={{ "--bg-image": `url(${category.image})` }}>
         <p>{category.name}</p>
@@ -24,7 +24,7 @@ function FoodCategories({foodCategories}) {
 }
 
 FoodCategories.propTypes = {
-  foodCategories: PropTypes.array
+  foodCategoriesList: PropTypes.array
 }
 
 export default FoodCategories

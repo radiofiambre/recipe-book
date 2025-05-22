@@ -1,4 +1,4 @@
-const mealTimes = [
+const mealTimesData = [
   { name: 'Desayuno'},
   { name: 'Almuerzo'},
   { name: 'Comida'},
@@ -7,4 +7,4 @@ const mealTimes = [
   { name: 'Aperitivo'}
 ]
 
-export default mealTimes;
+export default mealTimesData;

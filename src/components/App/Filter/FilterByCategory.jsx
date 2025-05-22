@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import createSlug from "../../../data/createSlug";
 
-function FilterByCategory({ foodCategories }) {
-  const allCategories = foodCategories.map((category, index) => (
+function FilterByCategory({ foodCategoriesList }) {
+  const allCategories = foodCategoriesList.map((category, index) => (
     <option key={index} value={createSlug(category.name)}>
       {category.name}
     </option>
@@ -20,7 +20,7 @@ function FilterByCategory({ foodCategories }) {
 }
 
 FilterByCategory.propTypes = {
-  foodCategories: PropTypes.array,
+  foodCategoriesList: PropTypes.array,
 };
 
 export default FilterByCategory;

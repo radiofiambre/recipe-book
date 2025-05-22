@@ -1,7 +1,7 @@
-const difficultyLevels = [
+const difficultyLevelsData = [
   { name: 'Fácil'},
   { name: 'Media'},
   { name: 'Difícil'}
 ]
 
-export default difficultyLevels;
+export default difficultyLevelsData;

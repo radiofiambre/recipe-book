@@ -1,4 +1,4 @@
-const foodCategories = [
+const foodCategoriesData = [
   { name: 'Arroz', image: '/food_categories/rice.png'},
   { name: 'Bebidas y cócteles', image: '/food_categories/beverages.jpg'},
   { name: 'Carnes y aves', image: '/food_categories/meat.jpg'},
@@ -15,4 +15,4 @@ const foodCategories = [
   { name: 'Verduras y hortalizas', image: '/food_categories/vegetables.jpg'}
 ]
 
-export default foodCategories;
+export default foodCategoriesData;
