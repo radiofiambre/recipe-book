@@ -42,3 +42,32 @@ a {
     text-decoration: underline;
   }
 }
+
+
+
+@include tablet {
+  .FoodCategories_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@include notebook {
+  .FoodCategories_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+@include large-screens {
+  .FoodCategories_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+@include extra-large-screens {
+  .FoodCategories_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  }
+}

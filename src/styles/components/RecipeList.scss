@@ -19,28 +19,28 @@
   list-style: none;
 }
 
-@media (min-width: map.get($breakpoints, "tablet")) {
+@include tablet {
   .RecipeList_container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 
-@media (min-width: map.get($breakpoints, "notebook")) {
+@include notebook {
   .RecipeList_container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 
-@media (min-width: map.get($breakpoints, "large screens")) {
+@include large-screens {
   .RecipeList_container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
 
-@media (min-width: map.get($breakpoints, "extra large screens")) {
+@include extra-large-screens {
   .RecipeList_container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }

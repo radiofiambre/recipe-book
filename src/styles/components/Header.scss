@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: map.get($breakpoints, "tablet")) {
+@include tablet {
   .header_title {
     font-size: 2rem;
   }

@@ -59,7 +59,7 @@
   width: 90%;
 }
 
-@media (min-width: map.get($breakpoints, "tablet")) {
+@include tablet {
   .RecipePage {
     &_section {
       padding: 15px 30px;
@@ -104,7 +104,7 @@
 }
 
 
-@media (min-width: map.get($breakpoints, "notebook")) {
+@include notebook {
   .RecipePage {
     margin-left: 10%;
     margin-right: 10%;
@@ -112,7 +112,7 @@
 }
 
 
-@media (min-width: map.get($breakpoints, "large screens")) {
+@include large-screens {
   .RecipePage {
     margin-left: 20%;
     margin-right: 20%;
@@ -120,7 +120,7 @@
 }
 
 
-@media (min-width: map.get($breakpoints, "extra large screens")) {
+@include extra-large-screens {
   .RecipePage {
     margin-left: 25%;
     margin-right: 25%;

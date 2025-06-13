@@ -32,34 +32,34 @@
     & p {
       margin-bottom: 0em;
       font-weight: bold;
-      color: $cream;
+      color: $white;
     }
   }  
 }
 
 
-@media (min-width: map.get($breakpoints, "tablet")) {
+@include tablet {
   .FoodCategories_container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 
-@media (min-width: map.get($breakpoints, "notebook")) {
+@include notebook {
   .FoodCategories_container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 
-@media (min-width: map.get($breakpoints, "large screens")) {
+@include large-screens {
   .FoodCategories_container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
 
-@media (min-width: map.get($breakpoints, "extra large screens")) {
+@include extra-large-screens {
   .FoodCategories_container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
   }
