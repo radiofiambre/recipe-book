@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
 function FilterByCategory({ foodCategoriesList, setCategory }) {
-  const allCategories = foodCategoriesList.map((category, index) => (
-    <option key={index} value={category.name}>
-      {category.name}
+  const allCategories = foodCategoriesList.map((categoryData, index) => (
+    <option key={index} value={categoryData.name}>
+      {categoryData.name}
     </option>
   ));
 
@@ -22,7 +22,7 @@ function FilterByCategory({ foodCategoriesList, setCategory }) {
 
 FilterByCategory.propTypes = {
   foodCategoriesList: PropTypes.array,
-  setCategory: PropTypes.func
+  setCategory: PropTypes.func,
 };
 
 export default FilterByCategory;

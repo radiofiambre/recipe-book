@@ -1,8 +1,12 @@
-function FilterByPrepTime() {
+import PropTypes from "prop-types";
+
+function FilterByPrepTime({ prepTime, setPrepTime }) {
+  const handleSelect = (event) => setPrepTime(event.target.value);
+
   return (
     <>
       <label htmlFor="">Tiempo:</label>
-      <select name="" id="">
+      <select name="" defaultValue="all" onChange={handleSelect}>
         <option value="">Selecciona</option>
         <option value="lt-15">&lt; 15 minutos</option>
         <option value="lt-30">&lt; 30 minutos</option>
@@ -12,5 +16,10 @@ function FilterByPrepTime() {
     </>
   );
 }
+
+FilterByPrepTime.propTypes = {
+  prepTime: PropTypes.string,
+  setPrepTime: PropTypes.func,
+};
 
 export default FilterByPrepTime;

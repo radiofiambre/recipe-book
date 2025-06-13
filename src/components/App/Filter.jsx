@@ -15,6 +15,10 @@ function Filter(props) {
     setRecipeName,
     setCategory,
     setMealTime,
+    difficulty,
+    setDifficulty,
+    prepTime,
+    setPrepTime,
     ingredients,
     setIngredients,
     favorite,
@@ -33,16 +37,22 @@ function Filter(props) {
           <FilterByName recipeName={recipeName} setRecipeName={setRecipeName} />
         </div>
         <div className="Filter_container">
-          <FilterByCategory foodCategoriesList={foodCategoriesList} setCategory={setCategory}/>
+          <FilterByCategory
+            foodCategoriesList={foodCategoriesList}
+            setCategory={setCategory}
+          />
         </div>
         <div className="Filter_container">
-          <FilterByMealTime />
+          <FilterByMealTime setMealTime={setMealTime} />
         </div>
         <div className="Filter_container">
-          <FilterByDifficulty />
+          <FilterByDifficulty
+            difficulty={difficulty}
+            setDifficulty={setDifficulty}
+          />
         </div>
         <div className="Filter_container">
-          <FilterByPrepTime />
+          <FilterByPrepTime prepTime={prepTime} setPrepTime={setPrepTime} />
         </div>
         <div className="Filter_container">
           <FilterByIngredients
@@ -64,10 +74,14 @@ Filter.propTypes = {
   setRecipeName: PropTypes.func,
   setCategory: PropTypes.func,
   setMealTime: PropTypes.func,
+  difficulty: PropTypes.string,
+  setDifficulty: PropTypes.func,
+  prepTime: PropTypes.string,
+  setPrepTime: PropTypes.func,
   ingredients: PropTypes.string,
   setIngredients: PropTypes.func,
   favorite: PropTypes.string,
-  setFavorite: PropTypes.func
+  setFavorite: PropTypes.func,
 };
 
 export default Filter;
