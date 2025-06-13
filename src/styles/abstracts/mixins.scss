@@ -3,21 +3,26 @@
   @media (max-width: 479px) { @content; }
 }
 
-@mixin tablet {
+@mixin big-mobile {
   @media (min-width: 480px) { @content; }
 }
 
-@mixin notebook {
+@mixin tablet {
   @media (min-width: 768px) { @content; }
 }
 
-@mixin large-screens {
+@mixin notebook {
   @media (min-width: 1024px) { @content; }
 }
 
-@mixin extra-large-screens {
+@mixin large-screens {
   @media (min-width: 1440px) { @content; }
 }
+
+@mixin extra-large-screens {
+  @media (min-width: 1920px) { @content; }
+}
+
 
 
 //BUTTONS

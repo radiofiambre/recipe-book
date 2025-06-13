@@ -1,10 +1,10 @@
 import RecipeCard from './RecipeList/RecipeCard';
 import PropTypes from "prop-types"
 
-function RecipeList({recipeList}) {
+function RecipeList({ recipeList }) {
 
   const allRecipes = recipeList.map(recipe =>
-    <RecipeCard key={recipe.id} id={recipe.id} name={recipe.name} image={recipe.image} categories={recipe.categories}/>
+    <RecipeCard key={recipe.id} id={recipe.id} name={recipe.name} image={recipe.image} prepTime={recipe.preparationTime}/>
   )
 
   return (
