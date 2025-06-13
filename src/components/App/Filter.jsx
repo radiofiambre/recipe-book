@@ -25,6 +25,16 @@ function Filter(props) {
     setFavorite,
   } = props;
 
+  const handleReset = () => {
+    setRecipeName("");
+    setCategory("all");
+    setMealTime("all");
+    setDifficulty("all");
+    setPrepTime("all");
+    setIngredients("");
+    setFavorite("all");
+  }
+
   return (
     <section className="Filter">
       <h2 className="Filter_title">Búsqueda de recetas</h2>
@@ -63,6 +73,7 @@ function Filter(props) {
         <div className="Filter_container">
           <FilterByFavorites favorite={favorite} setFavorite={setFavorite} />
         </div>
+        <button onClick={handleReset}>Limpiar filtro</button>
       </form>
     </section>
   );
