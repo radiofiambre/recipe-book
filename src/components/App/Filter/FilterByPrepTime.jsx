@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function FilterByPrepTime({ prepTime, setPrepTime }) {
+function FilterByPrepTime({ setPrepTime }) {
   const handleSelect = (event) => setPrepTime(event.target.value);
 
   return (
@@ -18,7 +18,6 @@ function FilterByPrepTime({ prepTime, setPrepTime }) {
 }
 
 FilterByPrepTime.propTypes = {
-  prepTime: PropTypes.string,
   setPrepTime: PropTypes.func,
 };
 

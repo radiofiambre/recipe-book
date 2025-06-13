@@ -9,17 +9,12 @@ import CategoryPage from "./App/CategoryPage";
 import { useState } from "react";
 import { Route, Routes, matchPath, useLocation } from "react-router-dom";
 
-import recipesData from "../data/recipesData";
-import foodCategoriesData from "../data/foodCategoriesData";
+import recipeList from "../data/recipesData";
+import foodCategoriesList from "../data/foodCategoriesData";
 import createSlug from "../data/createSlug";
 import normalizeSearchText from "../data/normalizeSearchText";
 
 function App() {
-  //Display elements
-  const [recipeList, setRecipeList] = useState(recipesData);
-  const [foodCategoriesList, setFoodCategoriesList] =
-    useState(foodCategoriesData);
-
   // Filter elements
   const [recipeName, setRecipeName] = useState("");
   const [category, setCategory] = useState("all");
@@ -82,7 +77,7 @@ function App() {
   // RUTA DE CATEGORÍAS
   const categoryRoute = matchPath("/category/:categoryName", pathname);
   const categoryName = categoryRoute ? categoryRoute.params.categoryName : "";
-  const categoryFromList = foodCategoriesData.find(
+  const categoryFromList = foodCategoriesList.find(
     (category) => createSlug(category.name) === categoryName
   );
 
@@ -106,10 +101,10 @@ function App() {
                 setRecipeName={setRecipeName}
                 setCategory={setCategory}
                 setMealTime={setMealTime}
-                difficulty={difficulty} // AÑADIDO
-                setDifficulty={setDifficulty} // AÑADIDO
-                prepTime={prepTime} // AÑADIDO
-                setPrepTime={setPrepTime} // AÑADIDO
+                difficulty={difficulty}
+                setDifficulty={setDifficulty}
+                prepTime={prepTime}
+                setPrepTime={setPrepTime}
                 ingredients={ingredients}
                 setIngredients={setIngredients}
                 favorite={favorite}

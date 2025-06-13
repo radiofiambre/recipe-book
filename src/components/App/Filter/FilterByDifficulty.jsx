@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import difficultyLevelsData from "../../../data/difficultyLevelsData";
 
-function FilterByDifficulty({ difficulty, setDifficulty }) {
+function FilterByDifficulty({ setDifficulty }) {
   const allDifficultyLevels = difficultyLevelsData.map(
     (difficultyLevelData, index) => (
       <option key={index} value={difficultyLevelData.name}>
@@ -24,7 +24,6 @@ function FilterByDifficulty({ difficulty, setDifficulty }) {
 }
 
 FilterByDifficulty.propTypes = {
-  difficulty: PropTypes.string,
   setDifficulty: PropTypes.func,
 };
 
