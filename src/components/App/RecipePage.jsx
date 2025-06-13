@@ -9,10 +9,10 @@ function RecipePage({recipe}) {
       <div className="RecipePage_top">
         <section className="RecipePage_section mainInfo">
           <h2>{name}</h2>
-          <h4 className="mainInfo_details">
+          <p className="mainInfo_details">
             <span>{preparationTime}</span>|<span>{servings}</span>|<span>{difficulty}</span>
-          </h4>
-          <p className="mainInfo_source">Fuente: <a className="url" href={source}>{source}</a></p>
+          </p>
+          {source ? <a className="mainInfo_source" href={source}>🔸 Fuente🔸</a> : null}
         </section>
         <img className="image" alt="" src={image}/>
       </div>

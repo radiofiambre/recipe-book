@@ -11,15 +11,13 @@ function RecipeCard(props) {
         <article className="RecipeCard">
           <img className="RecipeCard_Img" alt={name} src={image} />
           <div className="RecipeCard_textContainer">
-            <p className="RecipeCard_textCategory">
-              {categories.map((category, index) => (
-                <span key={index}>
-                  {category}
-                  {index < categories.length - 1 ? ", " : ""}
-                </span>
-              ))}
-            </p>
-            <h3 className="RecipeCard_textName">{name}</h3>
+            {categories.map((category, index) => (
+              <h6 className="RecipeCard_textCategory" key={index}>
+                {category}
+                {index < categories.length - 1 ? ", " : ""}
+              </h6>
+            ))}
+            <h4 className="RecipeCard_textName">{name}</h4>
           </div>
         </article>
       </li>

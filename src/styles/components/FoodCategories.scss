@@ -1,15 +1,7 @@
 @use '../abstracts' as *;
 @use "sass:map";
 
-.FoodCategories_title{
-  text-align: center;
-  color: $dark-green;
-}
 
-.FoodCategories_p {
-  text-align: center;
-  color: $dark-green;
-}
 
 .FoodCategories_container {
   margin: 30px 0px;
@@ -29,13 +21,9 @@
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     ), var(--bg-image);
-    & p {
-      margin-bottom: 0em;
-      font-weight: bold;
-      color: $white;
-    }
   }  
 }
+
 
 
 @include tablet {
@@ -45,6 +33,7 @@
 }
 
 
+
 @include notebook {
   .FoodCategories_container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -52,11 +41,13 @@
 }
 
 
+
 @include large-screens {
   .FoodCategories_container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
+
 
 
 @include extra-large-screens {

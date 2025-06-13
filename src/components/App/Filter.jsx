@@ -37,7 +37,7 @@ function Filter(props) {
 
   return (
     <section className="Filter">
-      <h2 className="Filter_title">Búsqueda de recetas</h2>
+      <h3 className="Filter_title">Búsqueda de recetas</h3>
       <p className="Filter_p">
         Encuentra sugerencias para cocinar según categorías, ingredientes o
         tiempo de preparación.

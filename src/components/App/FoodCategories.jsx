@@ -7,14 +7,14 @@ function FoodCategories({foodCategoriesList}) {
   const allCategories = foodCategoriesList.map((category, index) => (
     <Link to={`/category/${createSlug(category.name)}`} key={index}>
       <li className="FoodCategories_category" style={{ "--bg-image": `url(${category.image})` }}>
-        <p>{category.name}</p>
+        <h5>{category.name}</h5>
       </li>
     </Link>
   ))
 
   return (
     <section className="FoodCategories">
-      <h2 className="FoodCategories_title">Categorías</h2>
+      <h3 className="FoodCategories_title">Categorías</h3>
       <p className="FoodCategories_p">Recetas agrupadas por categorías alimenticias.</p>
       <ul className="FoodCategories_container">
         {allCategories}

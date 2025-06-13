@@ -1,6 +1,8 @@
 @use '../abstracts' as *;
 @use "sass:map";
 
+
+
 .RecipePage {
   margin-left: 5%;
   margin-right: 5%;
@@ -10,7 +12,7 @@
   &_section {
     padding: 30px 10px;
   }
-  
+
   &_top {
     margin-top: 0px;
     display: grid;
@@ -39,17 +41,18 @@
   }
 }
 
-
 .mainInfo {
   text-align: center;
+  margin: 20px;
+  color: $dark-green;
 
   & span {
-    margin: 5%;
+    margin: 20px;
+    color: inherit;
   }
 
   &_source {
-    padding-top: 30px;
-    font-size: 0.7em;
+    color: inherit;
   }
 }
 
@@ -59,41 +62,22 @@
   width: 90%;
 }
 
+
+
 @include tablet {
   .RecipePage {
     &_section {
       padding: 15px 30px;
     }
-
-    &_top {
-      grid-template-columns: 2fr 3fr;
-      margin-top: 40px;
-    }
-    &_bottom {
-      grid-template-columns: 1fr 2fr;
-      grid-template-areas:
-        "ingredients steps"
-        "notes steps";
-    }
   }
-  
-  
+
   .mainInfo {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  
-    & span {
-      margin: 5%;
-    }
-  
-    &_source {
-      padding-top: 30px;
-      font-size: 0.7em;
-    }
   }
-  
+
   .image {
     margin: 0px 15px;
     border-radius: 10px;
@@ -104,12 +88,26 @@
 }
 
 
+
 @include notebook {
   .RecipePage {
     margin-left: 10%;
     margin-right: 10%;
+
+    &_top {
+      grid-template-columns: 2fr 3fr;
+      margin-top: 40px;
+    }
+
+    &_bottom {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+        "ingredients steps"
+        "notes steps";
+    }
   }
 }
+
 
 
 @include large-screens {
@@ -118,6 +116,7 @@
     margin-right: 20%;
   }
 }
+
 
 
 @include extra-large-screens {

@@ -1,17 +1,6 @@
 @use '../abstracts' as *;
-@use "sass:map";
 
 .header {
   margin: 20px 0px;
   text-align: center;
-  &_title {
-    color: $dark-green;
-    font-size: 1em;
-  }
-}
-
-@include tablet {
-  .header_title {
-    font-size: 2rem;
-  }
 }

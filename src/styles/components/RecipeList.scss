@@ -1,15 +1,7 @@
 @use '../abstracts' as *;
 @use "sass:map";
 
-.RecipeList_title{
-  text-align: center;
-  color: $dark-green;
-}
 
-.RecipeList_p {
-  text-align: center;
-  color: $dark-green;
-}
 
 .RecipeList_container {
   margin: 30px 0px;
@@ -19,11 +11,14 @@
   list-style: none;
 }
 
+
+
 @include tablet {
   .RecipeList_container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 
 
 @include notebook {
@@ -33,11 +28,13 @@
 }
 
 
+
 @include large-screens {
   .RecipeList_container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
+
 
 
 @include extra-large-screens {

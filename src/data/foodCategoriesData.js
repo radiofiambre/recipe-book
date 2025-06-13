@@ -1,5 +1,5 @@
 const foodCategoriesData = [
-  { name: 'Arroz', image: '/food_categories/rice.png'},
+  { name: 'Arroces', image: '/food_categories/rice.png'},
   { name: 'Bebidas y cócteles', image: '/food_categories/beverages.jpg'},
   { name: 'Carnes y aves', image: '/food_categories/meat.jpg'},
   { name: 'Ensaladas', image: '/food_categories/salads.jpg'},

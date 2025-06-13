@@ -4,17 +4,26 @@
 }
 
 @mixin tablet {
-  @media (min-width: 480px) and (max-width: 767px) { @content; }
+  @media (min-width: 480px) { @content; }
 }
 
 @mixin notebook {
-  @media (min-width: 768px) and (max-width: 1023px) { @content; }
+  @media (min-width: 768px) { @content; }
 }
 
 @mixin large-screens {
-  @media (min-width: 1024px) and (max-width: 1439px) { @content; }
+  @media (min-width: 1024px) { @content; }
 }
 
 @mixin extra-large-screens {
   @media (min-width: 1440px) { @content; }
 }
+
+
+//BUTTONS
+// @mixin button-style($color, $border-color) {
+//   background-color: $color;
+//   font-size: $size;
+//   padding: 0.5rem 1rem;
+//   border-radius: 4px;
+// }

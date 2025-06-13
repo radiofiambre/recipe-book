@@ -4,11 +4,8 @@
 .footer {
   margin: 20px 0;
   text-align: center;
-  p {
-    font-size: 0.8em;
-  }
   &_copy {
-    color: $dark-green;
+    color: $dark-green; 
     font-weight: map.get($font-weights, "bold");
   }
 }
