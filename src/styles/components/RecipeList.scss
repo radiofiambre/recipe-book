@@ -2,6 +2,13 @@
 @use "sass:map";
 
 
+.RecipeList_recipeNotFoundMessage {
+  text-align: center;
+  color: $orange;
+  font-size: large;
+  font-weight: map.get($font-weights, "bold");
+  margin: 40px 0px;
+}
 
 .RecipeList_container {
   list-style: none;

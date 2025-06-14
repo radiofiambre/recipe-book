@@ -71,6 +71,10 @@ function App() {
       return true;
     });
 
+//   if (filterRecipes.length === 0) {
+//   alert("No se encontraron recetas con los filtros seleccionados.");
+// }
+
   // RUTAS
   const { pathname } = useLocation();
 
