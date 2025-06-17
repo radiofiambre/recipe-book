@@ -11,7 +11,7 @@ function FilterByIngredients({ ingredients, setIngredients }) {
       <input
         type="text"
         value={ingredients}
-        placeholder="Busca por ingredientes..."
+        placeholder="Escribe..."
         onChange={handleInput}
       />
     </>

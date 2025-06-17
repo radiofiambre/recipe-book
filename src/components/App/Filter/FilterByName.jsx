@@ -11,7 +11,7 @@ function FilterByName({ recipeName, setRecipeName }) {
       <input
         type="text"
         value={recipeName}
-        placeholder="Busca una receta..."
+        placeholder="Escribe..."
         onChange={handleInput}
       />
     </>
