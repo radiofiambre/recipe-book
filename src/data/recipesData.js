@@ -2,7 +2,7 @@ const recipesData = [
   {
     id: 1,
     name: "Ensalada de mango",
-    image: "/recipes/ensalada-de-mango.png",
+    image: "ensalada-de-mango",
     categories: ["Ensaladas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -28,7 +28,7 @@ const recipesData = [
   {
     id: 2,
     name: "Arroz con pollo al curry",
-    image: "/recipes/arroz-con-pollo-al-curry.jpeg",
+    image: "arroz-con-pollo-al-curry",
     categories: ["Arroces", "Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -57,7 +57,7 @@ const recipesData = [
   {
     id: 3,
     name: "Pan de aceitunas",
-    image: "/recipes/pan-de-aceitunas.jpg",
+    image: "pan-de-aceitunas",
     categories: ["Pan, masas y rebozados"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno"],
@@ -83,7 +83,7 @@ const recipesData = [
   {
     id: 4,
     name: "Tosta de tortilla francesa y aguacate",
-    image: "/recipes/tosta-de-tortilla-francesa-y-aguacate.jpg",
+    image: "tosta-de-tortilla-francesa-y-aguacate",
     categories: ["Tapas y aperitivos"],
     difficulty: "Fácil",
     mealTimess: ["Desayuno", "Cena"],
@@ -109,7 +109,7 @@ const recipesData = [
   {
     id: 5,
     name: "Uvas asadas con jamón y burrata",
-    image: "/recipes/uvas_asadas_con_jamon_y_burrata.png",
+    image: "uvas-asadas-con-jamon-y-burrata",
     categories: ["Ensaladas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -137,7 +137,7 @@ const recipesData = [
   {
     id: 6,
     name: "Arroz a la cubana",
-    image: "/recipes/arroz-a-la-cubana.jpeg",
+    image: "arroz-a-la-cubana",
     categories: ["Arroces"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -153,7 +153,7 @@ const recipesData = [
   {
     id: 7,
     name: "Arroz al estilo japonés",
-    image: "/recipes/arroz-al-estilo-japones.png",
+    image: "arroz-al-estilo-japones",
     categories: ["Arroces"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -183,7 +183,7 @@ const recipesData = [
   {
     id: 8,
     name: "Arroz meloso de pollo al ajillo",
-    image: "/recipes/arroz-meloso-de-pollo-al-ajillo.png",
+    image: "arroz-meloso-de-pollo-al-ajillo",
     categories: ["Arroces"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -228,7 +228,7 @@ const recipesData = [
   {
     id: 9,
     name: "Arroz con chipirones y almejas",
-    image: "/recipes/arroz-con-chipirones-y-almejas.jpg",
+    image: "arroz-con-chipirones-y-almejas",
     categories: ["Arroces"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -256,7 +256,7 @@ const recipesData = [
   {
     id: 10,
     name: "Arroz con verduras",
-    image: "/recipes/arroz-con-verduras.jpeg",
+    image: "arroz-con-verduras",
     categories: ["Arroces"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -283,7 +283,7 @@ const recipesData = [
   {
     id: 11,
     name: "Arroz con pollo",
-    image: "/recipes/arroz-con-pollo.jpg",
+    image: "arroz-con-pollo",
     categories: ["Arroces"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -317,7 +317,7 @@ const recipesData = [
   {
     id: 12,
     name: "Arroz con atún",
-    image: "/recipes/arroz-con-atun.jpeg",
+    image: "arroz-con-atun",
     categories: ["Arroces"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -333,7 +333,7 @@ const recipesData = [
   {
     id: 13,
     name: "Risotto de boletus",
-    image: "/recipes/risotto-de-boletus.png",
+    image: "risotto-de-boletus",
     categories: ["Arroces"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -360,7 +360,7 @@ const recipesData = [
   {
     id: 14,
     name: "Albóndigas",
-    image: "/recipes/albondigas.png",
+    image: "albondigas",
     categories: ["Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -387,7 +387,7 @@ const recipesData = [
   {
     id: 15,
     name: "Chuleta con patatas",
-    image: "/recipes/chuleta-con-patatas.jpeg",
+    image: "chuleta-con-patatas",
     categories: ["Carnes y aves"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -413,7 +413,7 @@ const recipesData = [
   {
     id: 16,
     name: "Estofado de ternera con patatas",
-    image: "/recipes/estofado-de-ternera-con-patatas.png",
+    image: "estofado-de-ternera-con-patatas",
     categories: ["Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -429,7 +429,7 @@ const recipesData = [
   {
     id: 17,
     name: "Pastel de pastor",
-    image: "/recipes/pastel-de-pastor.jpg",
+    image: "pastel-de-pastor",
     categories: ["Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -458,7 +458,7 @@ const recipesData = [
   {
     id: 18,
     name: "Pollo a la naranja",
-    image: "/recipes/pollo-a-la-naranja.png",
+    image: "pollo-a-la-naranja",
     categories: ["Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -474,7 +474,7 @@ const recipesData = [
   {
     id: 19,
     name: "Pollo asado con patatas panaderas",
-    image: "/recipes/pollo-asado-con-patatas-panaderas.jpeg",
+    image: "pollo-asado-con-patatas-panaderas",
     categories: ["Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -503,7 +503,7 @@ const recipesData = [
   {
     id: 20,
     name: "Pollo con salsa de puerro",
-    image: "/recipes/pollo-con-salsa-de-puerro.png",
+    image: "pollo-con-salsa-de-puerro",
     categories: ["Carnes y aves"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -532,7 +532,7 @@ const recipesData = [
   {
     id: 21,
     name: "Pollo crujiente con berenjena",
-    image: "/recipes/pollo-crujiente-con-berenjena.jpeg",
+    image: "pollo-crujiente-con-berenjena",
     categories: ["Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -566,7 +566,7 @@ const recipesData = [
   {
     id: 22,
     name: "Rabo de toro",
-    image: "/recipes/rabo-de-toro.png",
+    image: "rabo-de-toro",
     categories: ["Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -607,7 +607,7 @@ const recipesData = [
   {
     id: 23,
     name: "Secreto con manzana y patatas",
-    image: "/recipes/secreto-con-manzana-y-patatas.jpeg",
+    image: "secreto-con-manzana-y-patatas",
     categories: ["Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -628,7 +628,7 @@ const recipesData = [
   {
     id: 24,
     name: "Tartar de salmón",
-    image: "/recipes/tartar-de-salmon.png",
+    image: "tartar-de-salmon",
     categories: ["Arroces", "Pescados y marisco"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -650,7 +650,7 @@ const recipesData = [
   {
     id: 25,
     name: "Tosta de pera y queso azul",
-    image: "/recipes/tosta-de-pera-y-queso-azul.jpg",
+    image: "tosta-de-pera-y-queso-azul",
     categories: ["Tapas y aperitivos"],
     difficulty: "Media",
     mealTimes: ["Merienda", "Cena"],
@@ -675,7 +675,7 @@ const recipesData = [
   {
     id: 26,
     name: "Tallarines con langostinos al ajillo",
-    image: "/recipes/tallarines-con-langostinos-al-ajillo.png",
+    image: "tallarines-con-langostinos-al-ajillo",
     categories: ["Pasta"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -708,7 +708,7 @@ const recipesData = [
   {
     id: 27,
     name: "Zanahorias asadas con salsa de yogur y queso",
-    image: "/recipes/zanahorias-asadas-con-salsa-de-yogur-y-queso.jpg",
+    image: "zanahorias-asadas-con-salsa-de-yogur-y-queso",
     categories: ["Verduras y hortalizas"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -741,7 +741,7 @@ const recipesData = [
   {
     id: 28,
     name: "Ensalada de calabacín, salmón ahumado y puerro",
-    image: "/recipes/ensalada-de-calabacin-salmon-ahumado-y-puerro.jpg",
+    image: "ensalada-de-calabacin-salmon-ahumado-y-puerro",
     categories: ["Ensaladas", "Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -766,7 +766,7 @@ const recipesData = [
   {
     id: 29,
     name: "Lahmacun con pasta filo",
-    image: "/recipes/lahmacun-con-pasta-filo.png",
+    image: "lahmacun-con-pasta-filo",
     categories: ["Carnes y aves", "Pan, masas y rebozados"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -804,7 +804,7 @@ const recipesData = [
   {
     id: 30,
     name: "Hobak jeon (Calabacín rebozado coreano)",
-    image: "/recipes/hobak-jeon.jpg",
+    image: "hobak-jeon",
     categories: ["Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -844,7 +844,7 @@ const recipesData = [
   {
     id: 31,
     name: "Tallarines con cebolla caramelizada",
-    image: "/recipes/tallarines-con-cebolla-caramelizada.png",
+    image: "tallarines-con-cebolla-caramelizada",
     categories: ["Pasta"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -873,7 +873,7 @@ const recipesData = [
   {
     id: 32,
     name: "Carpaccio de tomate",
-    image: "/recipes/carpaccio-de-tomate.png",
+    image: "carpaccio-de-tomate",
     categories: ["Ensaladas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -889,7 +889,7 @@ const recipesData = [
   {
     id: 33,
     name: "Ensalada césar",
-    image: "/recipes/ensalada-cesar.jpg",
+    image: "ensalada-cesar",
     categories: ["Ensaladas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -916,7 +916,7 @@ const recipesData = [
   {
     id: 34,
     name: "Ensalada con espárragos y huevo",
-    image: "/recipes/ensalada-con-esparragos-y-huevo.jpeg",
+    image: "ensalada-con-esparragos-y-huevo",
     categories: ["Ensaladas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -932,7 +932,7 @@ const recipesData = [
   {
     id: 35,
     name: "Ensalada de garbanzos, boniato y kale",
-    image: "/recipes/ensalada-de-garbanzos-boniato-y-kale.png",
+    image: "ensalada-de-garbanzos-boniato-y-kale",
     categories: ["Ensaladas", "Legumbres y guisos"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -978,7 +978,7 @@ const recipesData = [
   {
     id: 36,
     name: "Ensaladilla rusa con mejillones",
-    image: "/recipes/ensaladilla-rusa-con-mejillones.jpeg",
+    image: "ensaladilla-rusa-con-mejillones",
     categories: ["Ensaladas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -994,7 +994,7 @@ const recipesData = [
   {
     id: 37,
     name: "Verduras confitadas con burrata",
-    image: "/recipes/verduras-confitadas-con-burrata.jpg",
+    image: "verduras-confitadas-con-burrata",
     categories: ["Ensaladas", "Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1031,7 +1031,7 @@ const recipesData = [
   {
     id: 38,
     name: "Zorongollo",
-    image: "/recipes/zorongollo.jpeg",
+    image: "zorongollo",
     categories: ["Ensaladas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1047,7 +1047,7 @@ const recipesData = [
   {
     id: 39,
     name: "Poke bowl de salmón",
-    image: "/recipes/poke-bowl-de-salmon.jpg",
+    image: "poke-bowl-de-salmon",
     categories: ["Ensaladas", "Pescados y marisco"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1087,7 +1087,7 @@ const recipesData = [
   {
     id: 40,
     name: "Ensalada de salmón ahumado y naranja",
-    image: "/recipes/ensalada-de-salmon-ahumado-y-naranja.jpeg",
+    image: "ensalada-de-salmon-ahumado-y-naranja",
     categories: ["Ensaladas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1112,7 +1112,7 @@ const recipesData = [
   {
     id: 41,
     name: "Huevo frito con verduras",
-    image: "/recipes/huevo-frito-con-verduras.jpeg",
+    image: "huevo-frito-con-verduras",
     categories: ["Huevos y patatas"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Cena"],
@@ -1134,7 +1134,7 @@ const recipesData = [
   {
     id: 42,
     name: "Huevo poché",
-    image: "/recipes/huevo-poche.png",
+    image: "huevo-poche",
     categories: ["Huevos y patatas"],
     difficulty: "Media",
     mealTimes: ["Desayuno", "Cena"],
@@ -1158,7 +1158,7 @@ const recipesData = [
   {
     id: 43,
     name: "Tortilla francesa",
-    image: "/recipes/tortilla-francesa.png",
+    image: "tortilla-francesa",
     categories: ["Huevos y patatas"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Cena"],
@@ -1174,7 +1174,7 @@ const recipesData = [
   {
     id: 44,
     name: "Tortitas de verduras",
-    image: "/recipes/tortitas-de-verduras.jpeg",
+    image: "tortitas-de-verduras",
     categories: ["Huevos y patatas"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -1190,7 +1190,7 @@ const recipesData = [
   {
     id: 45,
     name: "Tortilla de patatas con bonito",
-    image: "/recipes/tortilla-de-patatas-con-bonito.png",
+    image: "tortilla-de-patatas-con-bonito",
     categories: ["Huevos y patatas"],
     difficulty: "Media",
     mealTimes: ["Desayuno", "Cena"],
@@ -1217,7 +1217,7 @@ const recipesData = [
   {
     id: 46,
     name: "Tortilla de patatas",
-    image: "/recipes/tortilla-de-patatas.png",
+    image: "tortilla-de-patatas",
     categories: ["Huevos y patatas"],
     difficulty: "Media",
     mealTimes: ["Desayuno", "Cena"],
@@ -1233,7 +1233,7 @@ const recipesData = [
   {
     id: 47,
     name: "Alubias con almejas",
-    image: "/recipes/alubias-con-almejas.jpeg",
+    image: "alubias-con-almejas",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1249,7 +1249,7 @@ const recipesData = [
   {
     id: 48,
     name: "Alubias",
-    image: "/recipes/alubias.jpg",
+    image: "alubias",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1282,7 +1282,7 @@ const recipesData = [
   {
     id: 49,
     name: "Chili con carne",
-    image: "/recipes/chili-con-carne.jpg",
+    image: "chili-con-carne",
     categories: ["Legumbres y guisos", "Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1320,7 +1320,7 @@ const recipesData = [
   {
     id: 50,
     name: "Cocido montañés",
-    image: "/recipes/cocido-montanes.jpeg",
+    image: "cocido-montanes",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1336,7 +1336,7 @@ const recipesData = [
   {
     id: 51,
     name: "Curry de garbanzos",
-    image: "/recipes/curry-de-garbanzos.png",
+    image: "curry-de-garbanzos",
     categories: ["Arroces", "Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1367,7 +1367,7 @@ const recipesData = [
   {
     id: 52,
     name: "Garbanzos con arroz",
-    image: "/recipes/garbanzos-con-arroz.jpg",
+    image: "garbanzos-con-arroz",
     categories: ["Arroces", "Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1383,7 +1383,7 @@ const recipesData = [
   {
     id: 53,
     name: "Garbanzos con espárragos trigueros y bacon",
-    image: "/recipes/garbanzos-con-esparragos-trigueros-y-bacon.jpeg",
+    image: "garbanzos-con-esparragos-trigueros-y-bacon",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1405,7 +1405,7 @@ const recipesData = [
   {
     id: 54,
     name: "Garbanzos con gambones",
-    image: "/recipes/garbanzos-con-gambones.jpeg",
+    image: "garbanzos-con-gambones",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1433,7 +1433,7 @@ const recipesData = [
   {
     id: 55,
     name: "Lentejas viudas",
-    image: "/recipes/lentejas-viudas.jpg",
+    image: "lentejas-viudas",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1460,7 +1460,7 @@ const recipesData = [
   {
     id: 56,
     name: "Lentejas con chorizo y morcilla",
-    image: "/recipes/lentejas-con-chorizo-morcilla-y-panceta.jpg",
+    image: "lentejas-con-chorizo-morcilla-y-panceta",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1498,7 +1498,7 @@ const recipesData = [
   {
     id: 57,
     name: "Puré de lentejas con setas",
-    image: "/recipes/pure-de-lentejas-con-setas.jpg",
+    image: "pure-de-lentejas-con-setas",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -1532,7 +1532,7 @@ const recipesData = [
   {
     id: 58,
     name: "Menestra de verduras",
-    image: "/recipes/menestra-de-verduras.jpeg",
+    image: "menestra-de-verduras",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1559,7 +1559,7 @@ const recipesData = [
   {
     id: 59,
     name: "Puré de lentejas y jamón serrano",
-    image: "/recipes/pure-de-lentejas-y-jamon-serrano.jpeg",
+    image: "pure-de-lentejas-y-jamon-serrano",
     categories: ["Legumbres y guisos"],
     difficulty: "Media",
     mealTimes: ["Comida"],
@@ -1585,7 +1585,7 @@ const recipesData = [
   {
     id: 60,
     name: "Fideos con verduras salteadas",
-    image: "/recipes/fideos-con-verduras-salteadas.png",
+    image: "fideos-con-verduras-salteadas",
     categories: ["Pasta"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1625,7 +1625,7 @@ const recipesData = [
   {
     id: 61,
     name: "Lasña de carne",
-    image: "/recipes/lasana-de-carne.jpeg",
+    image: "lasana-de-carne",
     categories: ["Pasta"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -1655,7 +1655,7 @@ const recipesData = [
   {
     id: 62,
     name: "Lasaña de espinacas",
-    image: "/recipes/lasana-de-espinacas.jpeg",
+    image: "lasana-de-espinacas",
     categories: ["Pasta"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -1679,7 +1679,7 @@ const recipesData = [
   {
     id: 63,
     name: "Pad thai",
-    image: "/recipes/pad-thai.png",
+    image: "pad-thai",
     categories: ["Pasta"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1715,7 +1715,7 @@ const recipesData = [
   {
     id: 64,
     name: "Spaghetti a la carbonara",
-    image: "/recipes/spaghetti-a-la-carbonara.jpeg",
+    image: "spaghetti-a-la-carbonara",
     categories: ["Pasta"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1744,7 +1744,7 @@ const recipesData = [
   {
     id: 65,
     name: "Spaghetti con atún y calabacín",
-    image: "/recipes/spaghetti-con-atun-y-calabacin.jpeg",
+    image: "spaghetti-con-atun-y-calabacin",
     categories: ["Pasta"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1768,7 +1768,7 @@ const recipesData = [
   {
     id: 66,
     name: "Tagliatelle con pollo y nata",
-    image: "/recipes/tagliatelle-con-pollo-y-nata.jpeg",
+    image: "tagliatelle-con-pollo-y-nata",
     categories: ["Pasta"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1790,7 +1790,7 @@ const recipesData = [
   {
     id: 67,
     name: "Torcetti con jamón, champiñones y nata",
-    image: "/recipes/torcetti-con-jamon-champinones-y-nata.jpeg",
+    image: "torcetti-con-jamon-champinones-y-nata",
     categories: ["Pasta"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1815,7 +1815,7 @@ const recipesData = [
   {
     id: 68,
     name: "Salmón con espárragos verdes",
-    image: "/recipes/salmon-con-esparragos-verdes.jpg",
+    image: "salmon-con-esparragos-verdes",
     categories: ["Pescados y marisco"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1837,7 +1837,7 @@ const recipesData = [
   {
     id: 69,
     name: "Merluza en salsa verde con almejas",
-    image: "/recipes/merluza-en-salsa-verde-con-almejas.jpg",
+    image: "merluza-en-salsa-verde-con-almejas",
     categories: ["Pescados y marisco"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1875,7 +1875,7 @@ const recipesData = [
   {
     id: 70,
     name: "Pastel de merluza y gambas",
-    image: "/recipes/pastel-de-merluza-y-gambas.png",
+    image: "pastel-de-merluza-y-gambas",
     categories: ["Pescados y marisco"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1904,7 +1904,7 @@ const recipesData = [
   {
     id: 71,
     name: "Merluza con gambas al ajillo",
-    image: "/recipes/merluza-con-gambas-al-ajillo.png",
+    image: "merluza-con-gambas-al-ajillo",
     categories: ["Pescados y marisco"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1936,7 +1936,7 @@ const recipesData = [
   {
     id: 72,
     name: "Lubina al horno con patatas",
-    image: "/recipes/lubina-al-horno-con-patatas.jpeg",
+    image: "lubina-al-horno-con-patatas",
     categories: ["Pescados y marisco"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1973,7 +1973,7 @@ const recipesData = [
   {
     id: 73,
     name: "Atún con patatas y salsa de tomate",
-    image: "/recipes/atun-con-patatas-y-salsa-de-tomate.jpg",
+    image: "atun-con-patatas-y-salsa-de-tomate",
     categories: ["Pescados y marisco"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -1993,7 +1993,7 @@ const recipesData = [
   {
     id: 74,
     name: "Puré de verduras",
-    image: "/recipes/pure-de-verduras.jpg",
+    image: "pure-de-verduras",
     categories: ["Sopas, caldos y cremas", "Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2020,7 +2020,7 @@ const recipesData = [
   {
     id: 75,
     name: "Brownie",
-    image: "/recipes/brownie.jpg",
+    image: "brownie",
     categories: ["Postres y dulces"],
     difficulty: "Media",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2056,7 +2056,7 @@ const recipesData = [
   {
     id: 76,
     name: "Butadon",
-    image: "/recipes/butadon.jpg",
+    image: "butadon",
     categories: ["Arroces", "Carnes y aves"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2091,7 +2091,7 @@ const recipesData = [
   {
     id: 77,
     name: "Empanadillas",
-    image: "/recipes/empanadillas.jpeg",
+    image: "empanadillas",
     categories: ["Pan, masas y rebozados", "Tapas y aperitivos"],
     difficulty: "Media",
     mealTimes: ["Desayuno", "Almuerzo", "Comida", "Cena"],
@@ -2107,7 +2107,7 @@ const recipesData = [
   {
     id: 78,
     name: "Hojaldre de champiñones y bacon",
-    image: "/recipes/hojaldre-de-champiñones-y-bacon.jpeg",
+    image: "hojaldre-de-champiñones-y-bacon",
     categories: ["Pan, masas y rebozados"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2131,7 +2131,7 @@ const recipesData = [
   {
     id: 79,
     name: "Empanada de salmón y espinacas",
-    image: "/recipes/empanada-de salmón-y-espinacas.jpeg",
+    image: "empanada-de salmón-y-espinacas",
     categories: ["Pan, masas y rebozados"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2147,7 +2147,7 @@ const recipesData = [
   {
     id: 80,
     name: "Masa de pizza",
-    image: "/recipes/masa-de-pizza.jpg",
+    image: "masa-de-pizza",
     categories: ["Pan, masas y rebozados"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2175,7 +2175,7 @@ const recipesData = [
   {
     id: 81,
     name: "Pizza de langostinos",
-    image: "/recipes/pizza-de-langostinos.jpeg",
+    image: "pizza-de-langostinos",
     categories: ["Pan, masas y rebozados"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2199,7 +2199,7 @@ const recipesData = [
   {
     id: 82,
     name: "Pizza carbonara",
-    image: "/recipes/pizza-carbonara.jpeg",
+    image: "pizza-carbonara",
     categories: ["Pan, masas y rebozados"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2215,7 +2215,7 @@ const recipesData = [
   {
     id: 83,
     name: "Sandwich BTL",
-    image: "/recipes/sandwich-btl.png",
+    image: "sandwich-btl",
     categories: ["Pan, masas y rebozados"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Cena"],
@@ -2231,7 +2231,7 @@ const recipesData = [
   {
     id: 84,
     name: "Tatín de puerros",
-    image: "/recipes/tatin-de-puerros.png",
+    image: "tatin-de-puerros",
     categories: ["Pan, masas y rebozados"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2260,7 +2260,7 @@ const recipesData = [
   {
     id: 85,
     name: "Bizcocho de limón y pistacho",
-    image: "/recipes/bizcocho-de-limon-y-pistacho.png",
+    image: "bizcocho-de-limon-y-pistacho",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2276,7 +2276,7 @@ const recipesData = [
   {
     id: 86,
     name: "Bizcocho con pepitas de chocolate y nueces",
-    image: "/recipes/bizcocho-con-pepitas-de-chocolate-y-nueces.jpeg",
+    image: "bizcocho-con-pepitas-de-chocolate-y-nueces",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2309,7 +2309,7 @@ const recipesData = [
   {
     id: 87,
     name: "Bizcocho de yogur",
-    image: "/recipes/bizcocho-de-yogur.jpg",
+    image: "bizcocho-de-yogur",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2339,7 +2339,7 @@ const recipesData = [
   {
     id: 88,
     name: "Buñuelos",
-    image: "/recipes/bunuelos.png",
+    image: "bunuelos",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2365,7 +2365,7 @@ const recipesData = [
   {
     id: 89,
     name: "Crêpes",
-    image: "/recipes/crepes.jpeg",
+    image: "crepes",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2392,7 +2392,7 @@ const recipesData = [
   {
     id: 90,
     name: "Crêpes de chocolate",
-    image: "/recipes/crepes-de-chocolate.png",
+    image: "crepes-de-chocolate",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2426,7 +2426,7 @@ const recipesData = [
   {
     id: 91,
     name: "Flan de huevo",
-    image: "/recipes/flan-de-huevo.png",
+    image: "flan-de-huevo",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2449,7 +2449,7 @@ const recipesData = [
   {
     id: 92,
     name: "Croissant salado",
-    image: "/recipes/croissant-salado.jpeg",
+    image: "croissant-salado",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2465,7 +2465,7 @@ const recipesData = [
   {
     id: 93,
     name: "Gofres de plátano",
-    image: "/recipes/gofres-de-platano.png",
+    image: "gofres-de-platano",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2481,7 +2481,7 @@ const recipesData = [
   {
     id: 94,
     name: "Mousse de limón",
-    image: "/recipes/mousse-de-limon.png",
+    image: "mousse-de-limon",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2511,7 +2511,7 @@ const recipesData = [
   {
     id: 95,
     name: "Pan de plátano",
-    image: "/recipes/pan-de-platano.png",
+    image: "pan-de-platano",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2552,7 +2552,7 @@ const recipesData = [
   {
     id: 96,
     name: "Tarta de queso al horno",
-    image: "/recipes/tarta-de-queso-al-horno.jpg",
+    image: "tarta-de-queso-al-horno",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2589,7 +2589,7 @@ const recipesData = [
   {
     id: 97,
     name: "Tarta de zanahoria",
-    image: "/recipes/tarta-de-zanahoria.png",
+    image: "tarta-de-zanahoria",
     categories: ["Postres y dulces"],
     difficulty: "Media",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2632,7 +2632,7 @@ const recipesData = [
   {
     id: 98,
     name: "Tarta Guinness",
-    image: "/recipes/tarta-guinness.png",
+    image: "tarta-guinness",
     categories: ["Postres y dulces"],
     difficulty: "Media",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2681,7 +2681,7 @@ const recipesData = [
   {
     id: 99,
     name: "Tiramisú",
-    image: "/recipes/tiramisu.png",
+    image: "tiramisu",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2712,7 +2712,7 @@ const recipesData = [
   {
     id: 100,
     name: "Tortitas",
-    image: "/recipes/tortitas.png",
+    image: "tortitas",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2745,7 +2745,7 @@ const recipesData = [
   {
     id: 101,
     name: "Tortitas de plátano y avena",
-    image: "/recipes/tortitas-de-platano-y-avena.png",
+    image: "tortitas-de-platano-y-avena",
     categories: ["Postres y dulces"],
     difficulty: "Media",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2777,7 +2777,7 @@ const recipesData = [
   {
     id: 102,
     name: "Tostada francesa",
-    image: "/recipes/tostada-francesa.png",
+    image: "tostada-francesa",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2809,7 +2809,7 @@ const recipesData = [
   {
     id: 103,
     name: "Yogur con muesli y fruta",
-    image: "/recipes/yogur-con-muesli-y-fruta.jpeg",
+    image: "yogur-con-muesli-y-fruta",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -2831,7 +2831,7 @@ const recipesData = [
   {
     id: 104,
     name: "Salsa asiática",
-    image: "/recipes/salsa-asiatica.png",
+    image: "salsa-asiatica",
     categories: ["Salsas y guarniciones"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2853,7 +2853,7 @@ const recipesData = [
   {
     id: 105,
     name: "Salsa tzaziki",
-    image: "/recipes/salsa-tzaziki.png",
+    image: "salsa-tzaziki",
     categories: ["Salsas y guarniciones"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2883,7 +2883,7 @@ const recipesData = [
   {
     id: 106,
     name: "Bechamel",
-    image: "/recipes/bechamel.png",
+    image: "bechamel",
     categories: ["Salsas y guarniciones"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2918,7 +2918,7 @@ const recipesData = [
   {
     id: 107,
     name: "Salsa de mango",
-    image: "/recipes/salsa-de-mango.png",
+    image: "salsa-de-mango",
     categories: ["Salsas y guarniciones"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2940,7 +2940,7 @@ const recipesData = [
   {
     id: 108,
     name: "Salsa holandesa",
-    image: "/recipes/salsa-holandesa.jpg",
+    image: "salsa-holandesa",
     categories: ["Salsas y guarniciones"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2962,7 +2962,7 @@ const recipesData = [
   {
     id: 109,
     name: "Salsa de champiñones",
-    image: "/recipes/salsa-de-champinones.png",
+    image: "salsa-de-champinones",
     categories: ["Salsas y guarniciones"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -2995,7 +2995,7 @@ const recipesData = [
   {
     id: 110,
     name: "Huevos benedictinos",
-    image: "/recipes/huevos-benedictinos.png",
+    image: "huevos-benedictinos",
     categories: ["Huevos y patatas"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno"],
@@ -3012,7 +3012,7 @@ const recipesData = [
   {
     id: 111,
     name: "Crema de calabacín",
-    image: "/recipes/crema-de-calabacin.png",
+    image: "crema-de-calabacin",
     categories: ["Sopas, caldos y cremas", "Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3041,7 +3041,7 @@ const recipesData = [
   {
     id: 112,
     name: "Crema de calabaza",
-    image: "/recipes/crema-de-calabaza.png",
+    image: "crema-de-calabaza",
     categories: ["Sopas, caldos y cremas", "Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3067,7 +3067,7 @@ const recipesData = [
   {
     id: 113,
     name: "Sopa de fideos y pollo",
-    image: "/recipes/sopa-de-fideos-y-pollo.jpeg",
+    image: "sopa-de-fideos-y-pollo",
     categories: ["Sopas, caldos y cremas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3105,7 +3105,7 @@ const recipesData = [
   {
     id: 114,
     name: "Sopa de tomate",
-    image: "/recipes/sopa-de-tomate.jpeg",
+    image: "sopa-de-tomate",
     categories: ["Sopas, caldos y cremas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3137,7 +3137,7 @@ const recipesData = [
   {
     id: 115,
     name: "Vichyssoise de pera",
-    image: "/recipes/vichyssoise-de-pera.png",
+    image: "vichyssoise-de-pera",
     categories: ["Sopas, caldos y cremas", "Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3160,7 +3160,7 @@ const recipesData = [
   {
     id: 116,
     name: "Chuletas de cerdo a la pimienta",
-    image: "/recipes/chuletas-de-cerdo-a-la-pimienta.jpg",
+    image: "chuletas-de-cerdo-a-la-pimienta",
     categories: ["Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
@@ -3208,7 +3208,7 @@ const recipesData = [
   {
     id: 117,
     name: "Ensalada de garbanzos, anchoas y espárragos",
-    image: "/recipes/ensalada-de-garbanzos-anchoas-y-esparragos.jpg",
+    image: "ensalada-de-garbanzos-anchoas-y-esparragos",
     categories: ["Ensaladas", "Legumbres y guisos"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3234,7 +3234,7 @@ const recipesData = [
   {
     id: 118,
     name: "Tosta de salmón ahumado",
-    image: "/recipes/tosta-de-salmon-ahumado.jpg",
+    image: "tosta-de-salmon-ahumado",
     categories: ["Tapas y aperitivos"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Cena"],
@@ -3250,7 +3250,7 @@ const recipesData = [
   {
     id: 119,
     name: "Brioche de gambones",
-    image: "/recipes/brioche-de-gambones.jpg",
+    image: "brioche-de-gambones",
     categories: ["Tapas y aperitivos"],
     difficulty: "Fácil",
     mealTimes: ["Cena"],
@@ -3272,7 +3272,7 @@ const recipesData = [
   {
     id: 120,
     name: "Torrijas con miel",
-    image: "/recipes/torrijas-con-miel.jpg",
+    image: "torrijas-con-miel",
     categories: ["Postres y dulces"],
     difficulty: "Fácil",
     mealTimes: ["Desayuno", "Merienda"],
@@ -3303,7 +3303,7 @@ const recipesData = [
   {
     id: 121,
     name: "Costillas de cerdo con salsa barbacoa",
-    image: "/recipes/costillas-de-cerdo-con-salsa-barbacoa.jpg",
+    image: "costillas-de-cerdo-con-salsa-barbacoa",
     categories: ["Carnes y aves"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3349,7 +3349,7 @@ const recipesData = [
   {
     id: 122,
     name: "Musaka de pollo",
-    image: "/recipes/musaka-de-pollo.jpg",
+    image: "musaka-de-pollo",
     categories: ["Carnes y aves", "Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3384,7 +3384,7 @@ const recipesData = [
   {
     id: 123,
     name: "Albóndigas de pollo",
-    image: "/recipes/albondigas-de-pollo.jpg",
+    image: "albondigas-de-pollo",
     categories: ["Carnes y aves"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3413,7 +3413,7 @@ const recipesData = [
   {
     id: 124,
     name: "Musaka",
-    image: "/recipes/musaka.jpg",
+    image: "musaka",
     categories: ["Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3455,7 +3455,7 @@ const recipesData = [
   {
     id: 125,
     name: "Soufflé de coliflor",
-    image: "/recipes/souffle-de-coliflor.jpg",
+    image: "souffle-de-coliflor",
     categories: ["Verduras y hortalizas"],
     difficulty: "Fácil",
     mealTimes: ["Comida", "Cena"],
@@ -3494,7 +3494,7 @@ const recipesData = [
   // {
   //   id: 126,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3510,7 +3510,7 @@ const recipesData = [
   // {
   //   id: 127,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3526,7 +3526,7 @@ const recipesData = [
   // {
   //   id: 128,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3542,7 +3542,7 @@ const recipesData = [
   // {
   //   id: 129,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3558,7 +3558,7 @@ const recipesData = [
   // {
   //   id: 130,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3574,7 +3574,7 @@ const recipesData = [
   // {
   //   id: 131,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3590,7 +3590,7 @@ const recipesData = [
   // {
   //   id: 132,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3606,7 +3606,7 @@ const recipesData = [
   // {
   //   id: 133,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3622,7 +3622,7 @@ const recipesData = [
   // {
   //   id: 134,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3638,7 +3638,7 @@ const recipesData = [
   // {
   //   id: 135,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3654,7 +3654,7 @@ const recipesData = [
   // {
   //   id: 136,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3670,7 +3670,7 @@ const recipesData = [
   // {
   //   id: 137,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3686,7 +3686,7 @@ const recipesData = [
   // {
   //   id: 138,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3702,7 +3702,7 @@ const recipesData = [
   // {
   //   id: 139,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3718,7 +3718,7 @@ const recipesData = [
   // {
   //   id: 140,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3734,7 +3734,7 @@ const recipesData = [
   // {
   //   id: 141,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3750,7 +3750,7 @@ const recipesData = [
   // {
   //   id: 142,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3766,7 +3766,7 @@ const recipesData = [
   // {
   //   id: 143,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3782,7 +3782,7 @@ const recipesData = [
   // {
   //   id: 144,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3798,7 +3798,7 @@ const recipesData = [
   // {
   //   id: 145,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3814,7 +3814,7 @@ const recipesData = [
   // {
   //   id: 146,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3830,7 +3830,7 @@ const recipesData = [
   // {
   //   id: 147,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3846,7 +3846,7 @@ const recipesData = [
   // {
   //   id: 148,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3862,7 +3862,7 @@ const recipesData = [
   // {
   //   id: 149,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],
@@ -3878,7 +3878,7 @@ const recipesData = [
   // {
   //   id: 150,
   //   name: "",
-  //   image: "/recipes/",
+  //   image: "",
   //   categories: ["Sopas, caldos y cremas"],
   //   difficulty: "Fácil",
   //   mealTimes: ["Comida", "Cena"],

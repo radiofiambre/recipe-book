@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import createSlug from "../../../data/createSlug";
+import recipeImages from '../../../assets/recipes';
 
 function RecipeCard(props) {
   const { id, name, image, prepTime } = props;
@@ -9,7 +10,7 @@ function RecipeCard(props) {
     <Link to={`/recipe/${id}/${createSlug(name)}`}>
       <li className="RecipeCard_listElement">
         <article className="RecipeCard">
-          <img className="RecipeCard_Img" alt={name} src={image} />
+          <img className="RecipeCard_Img" alt={name} src={recipeImages[image]}/>
           <div className="RecipeCard_textContainer">
             <h6 className="RecipeCard_textCategory">{prepTime}</h6>
             <h4 className="RecipeCard_textName">{name}</h4>

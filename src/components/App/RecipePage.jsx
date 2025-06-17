@@ -1,4 +1,5 @@
 import PropTypes from "prop-types"
+import recipeImages from '../../assets/recipes';
 
 function RecipePage({recipe}) {
 
@@ -14,7 +15,7 @@ function RecipePage({recipe}) {
           </p>
           {source ? <a className="mainInfo_source" href={source}>🔸 Fuente🔸</a> : null}
         </section>
-        <img className="image" alt="" src={image}/>
+        <img className="image" alt="" src={recipeImages[image]}/>
       </div>
       <div className="RecipePage_bottom">
           <section className="RecipePage_section">
