@@ -1,5 +1,4 @@
 import RecipeCard from "./RecipeList/RecipeCard";
-// import recipeImages from '../../assets/recipes';
 import PropTypes from "prop-types";
 
 function RecipeList({ recipeList }) {

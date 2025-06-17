@@ -1,5 +1,4 @@
 import RecipeCard from "./RecipeList/RecipeCard";
-import recipeImages from '../../assets/recipes';
 import PropTypes from "prop-types";
 
 function CategoryPage({ category, recipeList }) {
@@ -21,7 +20,7 @@ function CategoryPage({ category, recipeList }) {
               key={recipe.id}
               id={recipe.id}
               name={recipe.name}
-              image={recipeImages[recipe.image]}
+              image={recipe.image}
               categories={recipe.categories}
             />
           ))}
