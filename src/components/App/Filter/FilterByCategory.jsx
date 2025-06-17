@@ -11,7 +11,7 @@ function FilterByCategory({ foodCategoriesList, setCategory }) {
 
   return (
     <>
-      <label htmlFor="">Categoría:</label>
+      <label className="filterName" htmlFor="">Categoría</label>
       <select name="" defaultValue="all" onChange={handleSelect}>
         <option value="all">Todas</option>
         {allCategories}

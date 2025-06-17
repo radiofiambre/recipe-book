@@ -13,7 +13,7 @@ function FoodCategories({foodCategoriesList}) {
   ))
 
   return (
-    <section className="FoodCategories">
+    <section className="FoodCategories pageSection">
       <h3 className="FoodCategories_title">Categorías</h3>
       <p className="FoodCategories_p">Recetas agrupadas por categorías alimenticias.</p>
       <ul className="FoodCategories_container">

@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .Filter_title {
   color: $dark-green;
@@ -7,4 +7,303 @@
 
 .Filter_p {
   text-align: center;
+}
+
+.Filter_button {
+  @include button-style($dark-green, $cream);
+}
+
+// SMALL PHONES
+
+.Filter_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto 80px;
+  padding: 0 16px;
+  // max-width: 1500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Filter_container {
+  display: grid;
+  gap: 10px 15px;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  & {
+    .filter1 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+    .filter2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+    .filter3 {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .filter4 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    .filter5 {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    .filter6 {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+    .filter7 {
+      grid-area: 4 / 1 / 5 / 3;
+    }
+  }
+  margin-bottom: 25px;
+
+  // Contenedor de cada filtro individual
+  &_eachFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    // Estilos base para inputs y selects (NO radio buttons)
+    input:not([type="radio"]),
+    select {
+      background-color: $cream;
+      border: 2px solid $yellow;
+      border-radius: 50px;
+      padding: 0px 10px;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 26px;
+
+      // Estados interactivos
+      &:hover {
+        box-shadow: 0 2px 8px rgba($yellow, 0.3);
+        transform: translateY(-1px);
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $orange;
+        box-shadow: 0 0 0 3px rgba($orange, 0.2);
+        transform: translateY(-1px);
+      }
+
+      &::placeholder {
+        color: rgba(0, 0, 0, 0.5);
+        font-style: italic;
+      }
+    }
+
+    // Select específico
+    select {
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-size: 14px;
+      padding-right: 10px;
+      padding-left: 10px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  }
+
+  // Contenedor específico para radio buttons
+  .radioContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    .radioLabel {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $orange;
+        background-color: rgba($light-blue, 0.15);
+        border-radius: 6px;
+        transform: translateY(-1px);
+      }
+
+      // Radio button styling
+      input[type="radio"] {
+        margin-right: 8px;
+        accent-color: $orange;
+        transform: scale(1);
+
+        &:checked {
+          background-color: $orange;
+          border-color: $yellow;
+        }
+
+        &:focus-visible {
+          outline: 2px solid $yellow;
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
+}
+
+// BIG-MOBILE
+
+@include big-mobile {
+  .Filter_container {
+    gap: 12px 30px;
+    margin-bottom: 30px;
+    &_eachFilter {
+      input:not([type="radio"]),
+      select {
+        padding: 3px 15px;
+      }
+    }
+  }
+}
+
+// TABLET
+
+@include tablet {
+  .Filter_container {
+    gap: 20px 30px;
+    margin-bottom: 35px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    & {
+      .filter1 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      .filter2 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+      .filter3 {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+      .filter4 {
+        grid-area: 2 / 1 / 2 / 2;
+      }
+      .filter5 {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      .filter6 {
+        grid-area: 2 / 3 / 3 / 4;
+      }
+      .filter7 {
+        grid-area: 3 / 1 / 4 / 4;
+      }
+    }
+  }
+}
+
+// NOTEBOOK
+
+@include notebook {
+  .Filter {
+    margin: 0 6%;
+  }
+  .Filter_container {
+    gap: 15px 45px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    & {
+      .filter1 {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+      .filter2 {
+        grid-area: 1 / 3 / 2 / 5;
+      }
+      .filter3 {
+        grid-area: 1 / 5 / 2 / 7;
+      }
+      .filter4 {
+        grid-area: 2 / 1 / 3 / 3;
+      }
+      .filter5 {
+        grid-area: 2 / 3 / 3 / 5;
+      }
+      .filter6 {
+        grid-area: 2 / 5 / 3 / 7;
+      }
+      .filter7 {
+        grid-area: 1 / 7 / 3 / 8;
+      }
+    }
+    .radioContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    }
+  }
+}
+
+// LARGE SCREENS
+
+@include large-screens {
+  .Filter {
+    margin: 0 3%;
+  }
+  .Filter_container {
+    gap: 15px 45px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    & {
+      .filter1 {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+      .filter2 {
+        grid-area: 1 / 3 / 2 / 5;
+      }
+      .filter3 {
+        grid-area: 1 / 5 / 2 / 7;
+      }
+      .filter4 {
+        grid-area: 2 / 1 / 3 / 3;
+      }
+      .filter5 {
+        grid-area: 2 / 3 / 3 / 5;
+      }
+      .filter6 {
+        grid-area: 2 / 5 / 3 / 7;
+      }
+      .filter7 {
+        grid-area: 1 / 7 / 3 / 8;
+      }
+    }
+  }
+}
+
+// EXTRA-LARGE SCREENS
+
+@include extra-large-screens {
+  .Filter_container {
+    margin: 0 10%;
+    gap: 30px 50px;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    & {
+      .filter1 {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+      .filter2 {
+        grid-area: 1 / 3 / 2 / 5;
+      }
+      .filter3 {
+        grid-area: 1 / 5 / 2 / 7;
+      }
+      .filter4 {
+        grid-area: 1 / 7 / 2 / 9;
+      }
+      .filter5 {
+        grid-area: 1 / 9 / 2 / 11;
+      }
+      .filter6 {
+        grid-area: 1 / 11 / 2 / 13;
+      }
+      .filter7 {
+        grid-area: 1 / 13 / 2 / 14;
+      }
+    }
+  }
 }

@@ -7,37 +7,39 @@ function FilterByFavorites({ favorite, setFavorite }) {
 
   return (
     <>
-      <label>Favorita:</label>
-      <label>
-        <input
-          type="radio"
-          name="favorite"
-          value="favorite"
-          checked={favorite === "favorite"}
-          onChange={handleCheckbox}
-        />
-        Solo favoritas
-      </label>
-      <label>
-        <input
-          type="radio"
-          name="favorite"
-          value="not-favorite"
-          checked={favorite === "not-favorite"}
-          onChange={handleCheckbox}
-        />
-        No favoritas
-      </label>
-      <label>
-        <input
-          type="radio"
-          name="favorite"
-          value="all"
-          checked={favorite === "all"}
-          onChange={handleCheckbox}
-        />
-        Todas
-      </label>
+      <label className="filterName">Favorita</label>
+      <section className="radioContainer">
+        <label className="radioLabel">
+          <input
+            type="radio"
+            name="favorite"
+            value="all"
+            checked={favorite === "all"}
+            onChange={handleCheckbox}
+          />
+          Todas
+        </label>
+        <label className="radioLabel">
+          <input
+            type="radio"
+            name="favorite"
+            value="favorite"
+            checked={favorite === "favorite"}
+            onChange={handleCheckbox}
+          />
+          Sí
+        </label>
+        <label className="radioLabel">
+          <input
+            type="radio"
+            name="favorite"
+            value="not-favorite"
+            checked={favorite === "not-favorite"}
+            onChange={handleCheckbox}
+          />
+          No
+        </label>
+      </section>
     </>
   );
 }

@@ -16,7 +16,7 @@ function FilterByMealTime({ setMealTime }) {
 
   return (
     <>
-      <label htmlFor="">Momento del día:</label>
+      <label className="filterName" htmlFor="">Momento del día</label>
       <select name="" defaultValue="all" onChange={handleSelect}>
         <option value="all">Todas</option>
         {allMealTimes}

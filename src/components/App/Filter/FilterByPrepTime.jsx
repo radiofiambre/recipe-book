@@ -5,7 +5,7 @@ function FilterByPrepTime({ setPrepTime }) {
 
   return (
     <>
-      <label htmlFor="">Tiempo:</label>
+      <label className="filterName" htmlFor="">Tiempo</label>
       <select name="" defaultValue="all" onChange={handleSelect}>
         <option value="">Selecciona</option>
         <option value="lt-15">&lt; 15 minutos</option>

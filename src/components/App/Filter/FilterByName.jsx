@@ -7,7 +7,7 @@ function FilterByName({ recipeName, setRecipeName }) {
 
   return (
     <>
-      <label htmlFor="">Nombre:</label>
+      <label className="filterName" htmlFor="">Nombre</label>
       <input
         type="text"
         value={recipeName}

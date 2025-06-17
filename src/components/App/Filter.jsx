@@ -36,44 +36,41 @@ function Filter(props) {
   }
 
   return (
-    <section className="Filter">
-      <h4 className="Filter_title">Búsqueda de recetas</h4>
-      <p className="Filter_p">
-        Encuentra sugerencias para cocinar según categorías, ingredientes o
-        tiempo de preparación.
-      </p>
-      <form action="">
-        <div className="Filter_container">
-          <FilterByName recipeName={recipeName} setRecipeName={setRecipeName} />
-        </div>
-        <div className="Filter_container">
-          <FilterByCategory
-            foodCategoriesList={foodCategoriesList}
-            setCategory={setCategory}
-          />
-        </div>
-        <div className="Filter_container">
-          <FilterByMealTime setMealTime={setMealTime} />
-        </div>
-        <div className="Filter_container">
-          <FilterByDifficulty
-            difficulty={difficulty}
-            setDifficulty={setDifficulty}
-          />
-        </div>
-        <div className="Filter_container">
-          <FilterByPrepTime prepTime={prepTime} setPrepTime={setPrepTime} />
-        </div>
-        <div className="Filter_container">
-          <FilterByIngredients
-            ingredients={ingredients}
-            setIngredients={setIngredients}
-          />
-        </div>
-        <div className="Filter_container">
-          <FilterByFavorites favorite={favorite} setFavorite={setFavorite} />
-        </div>
-        <button onClick={handleReset}>Limpiar filtro</button>
+    <section className="Filter pageSection">
+      <form className="Filter_form">
+        <section className="Filter_container">
+          <div className="Filter_container_eachFilter filter1">
+            <FilterByName recipeName={recipeName} setRecipeName={setRecipeName} />
+          </div>
+          <div className="Filter_container_eachFilter filter2">
+            <FilterByCategory
+              foodCategoriesList={foodCategoriesList}
+              setCategory={setCategory}
+            />
+          </div>
+          <div className="Filter_container_eachFilter filter3">
+            <FilterByMealTime setMealTime={setMealTime} />
+          </div>
+          <div className="Filter_container_eachFilter filter4">
+            <FilterByDifficulty
+              difficulty={difficulty}
+              setDifficulty={setDifficulty}
+            />
+          </div>
+          <div className="Filter_container_eachFilter filter5">
+            <FilterByPrepTime prepTime={prepTime} setPrepTime={setPrepTime} />
+          </div>
+          <div className="Filter_container_eachFilter filter6">
+            <FilterByIngredients
+              ingredients={ingredients}
+              setIngredients={setIngredients}
+            />
+          </div>
+          <div className="Filter_container_eachFilter filter7">
+            <FilterByFavorites favorite={favorite} setFavorite={setFavorite} />
+          </div>
+        </section>
+        <button className="Filter_button" onClick={handleReset}>Limpiar filtro</button>
       </form>
     </section>
   );

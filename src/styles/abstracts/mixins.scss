@@ -1,34 +1,63 @@
 // BREAKPOINTS
 @mixin mobile {
-  @media (max-width: 479px) { @content; }
+  @media (max-width: 479px) {
+    @content;
+  }
 }
 
 @mixin big-mobile {
-  @media (min-width: 480px) { @content; }
+  @media (min-width: 480px) {
+    @content;
+  }
 }
 
 @mixin tablet {
-  @media (min-width: 768px) { @content; }
+  @media (min-width: 768px) {
+    @content;
+  }
 }
 
 @mixin notebook {
-  @media (min-width: 1024px) { @content; }
+  @media (min-width: 1024px) {
+    @content;
+  }
 }
 
 @mixin large-screens {
-  @media (min-width: 1440px) { @content; }
+  @media (min-width: 1440px) {
+    @content;
+  }
 }
 
 @mixin extra-large-screens {
-  @media (min-width: 1920px) { @content; }
+  @media (min-width: 1920px) {
+    @content;
+  }
 }
 
+// BUTTONS
+@mixin button-style($main-color, $background-color) {
+  font-family: "DM Serif Text", sans-serif;
+  font-weight: bold;
+  font-size: 0.6rem;
+  padding: 4px 10px;
+  color: $main-color;
+  background-color: $background-color;
+  border-radius: 50px;
+  border: 2px solid $main-color;
 
+  @include big-mobile {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
 
-//BUTTONS
-// @mixin button-style($color, $border-color) {
-//   background-color: $color;
-//   font-size: $size;
-//   padding: 0.5rem 1rem;
-//   border-radius: 4px;
-// }
+  @include tablet {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+
+  @include notebook {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

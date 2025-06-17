@@ -3,13 +3,10 @@ import PropTypes from "prop-types";
 
 function RecipeList({ recipeList }) {
   return (
-    <section className="RecipeList">
-      <h3 className="RecipeList_title">Lista de recetas</h3>
-      <p className="RecipeList_p">
-        Encuentra las recetas que se han creado recientemente.
-      </p>
+    <section className="RecipeList pageSection">
+
       {recipeList.length === 0 ? (
-        <p className="RecipeList_recipeNotFoundMessage">
+        <p className="recipeNotFoundMessage">
           No se han encontrado recetas.
         </p>
       ) : (

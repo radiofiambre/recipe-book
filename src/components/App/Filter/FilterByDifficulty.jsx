@@ -14,7 +14,7 @@ function FilterByDifficulty({ setDifficulty }) {
 
   return (
     <>
-      <label htmlFor="">Dificultad:</label>
+      <label className="filterName" htmlFor="">Dificultad</label>
       <select name="" defaultValue="all" onChange={handleSelect}>
         <option value="all">Todas</option>
         {allDifficultyLevels}

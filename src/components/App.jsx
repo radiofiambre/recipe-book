@@ -35,9 +35,13 @@ function App() {
       category === "all" ? true : recipe.categories.includes(category)
     )
     // mealTime
-    .filter((recipe) => mealTime === "all" ? true : recipe.mealTimes.includes(mealTime))
+    .filter((recipe) =>
+      mealTime === "all" ? true : recipe.mealTimes.includes(mealTime)
+    )
     // difficulty
-    .filter((recipe) => difficulty === "all" ? true : recipe.difficulty === difficulty)
+    .filter((recipe) =>
+      difficulty === "all" ? true : recipe.difficulty === difficulty
+    )
     // prepTime
     .filter((recipe) => {
       if (prepTime === "all") return true;
@@ -71,10 +75,6 @@ function App() {
       return true;
     });
 
-//   if (filterRecipes.length === 0) {
-//   alert("No se encontraron recetas con los filtros seleccionados.");
-// }
-
   // RUTAS
   const { pathname } = useLocation();
 
@@ -99,6 +99,11 @@ function App() {
           element={
             <>
               <FoodCategories foodCategoriesList={foodCategoriesList} />
+              <h3 className="RecipeList_title">Lista de recetas</h3>
+              <p className="RecipeList_p">
+                Encuentra sugerencias para cocinar según momento del día,
+                ingredientes o tiempo de preparación.
+              </p>
               <Filter
                 foodCategoriesList={foodCategoriesList}
                 recipeName={recipeName}

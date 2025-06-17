@@ -59,10 +59,19 @@ h6 {
   margin-bottom: 0.5em;
 }
 
-p {
+p, input, select, .radioLabel {
   font-family: $text;
   font-weight: map.get($font-weights, "medium");
   color: $dark-grey;
+  line-height: 1.6;
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+label {
+  font-family: $title-secondary;
+  font-weight: map.get($font-weights, "bold");
+  color: $dark-green;
   line-height: 1.6;
   font-size: 0.7rem;
   margin-bottom: 0.2rem;
@@ -99,10 +108,15 @@ a {
   h6 {
     font-size: 0.8rem;
   }
-  p {
+  p, input, select, .radioLabel {
     font-size: 0.9rem;
     line-height: 1.6;
   }
+  label {
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
 }
 
 
@@ -126,9 +140,14 @@ a {
   h6 {
     font-size: 0.9rem;
   }
-  p {
+  p, input, select, .radioLabel {
     font-size: 1rem;
     line-height: 1.6;
+  }
+  label {
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -153,16 +172,21 @@ a {
   h6 {
     font-size: 1.2rem;
   }
-  p {
+  p, input, select, .radioLabel {
     font-size: 1.125rem;
     line-height: 1.7;
+  }
+  label {
+    line-height: 1.6;
+    font-size: 1.125rem;
+    margin-bottom: 0.2rem;
   }
 }
 
 
 
 @include large-screens {
-    h1 {
+  h1 {
     font-size: 3rem;
   }
   h2 {
@@ -180,9 +204,14 @@ a {
   h6 {
     font-size: 1.2rem;
   }
-  p {
+  p, input, select, .radioLabel {
     font-size: 1.125rem;
     line-height: 1.7;
+  }
+  label {
+    line-height: 1.6;
+    font-size: 1.125rem;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -205,8 +234,13 @@ a {
   h6 {
     font-size: 1.4rem;
   }
-  p {
+  p, input, select, .radioLabel {
     font-size: 1.125rem;
     line-height: 1.7;
+  }
+  label {
+    line-height: 1.6;
+    font-size: 1.125rem;
+    margin-bottom: 0.2rem;
   }
 }

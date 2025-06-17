@@ -4,6 +4,17 @@ body {
   margin: 30px 20px;
 }
 
+.pageSection {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+@include big-mobile {
+    body {
+    margin: 40px 30px;
+  }
+}
+
 @include tablet {
     body {
     margin: 70px 70px;
