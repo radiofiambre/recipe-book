@@ -1,6 +1,6 @@
 {
-  "name": "my-react-app",
-  "homepage": "./",
+  "name": "recipe-book",
+  "homepage": "https://radiofiambre.github.io/recipe-book/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
