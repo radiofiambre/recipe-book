@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 function RecipeList({ recipeList }) {
   return (
     <section className="RecipeList pageSection">
-
       {recipeList.length === 0 ? (
         <p className="recipeNotFoundMessage">
           No se han encontrado recetas.

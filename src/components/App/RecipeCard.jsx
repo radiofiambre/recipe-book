@@ -12,7 +12,7 @@ function RecipeCard(props) {
         <article className="RecipeCard">
           <img className="RecipeCard_Img" alt={name} src={recipeImages[image]}/>
           <div className="RecipeCard_textContainer">
-            <h6 className="RecipeCard_textCategory">{prepTime}</h6>
+            <h6 className="RecipeCard_textPrepTime">{prepTime}</h6>
             <h4 className="RecipeCard_textName">{name}</h4>
           </div>
         </article>

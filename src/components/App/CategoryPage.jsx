@@ -14,14 +14,14 @@ function CategoryPage({ category, recipeList }) {
       {filteredRecipesByCategory.length === 0 ? (
         <p className="recipeNotFoundMessage">No se han encontrado recetas.</p>
       ) : (
-        <ul className="CategoryPage_container">
+        <ul className="RecipeList_container">
           {filteredRecipesByCategory.map((recipe) => (
             <RecipeCard
               key={recipe.id}
               id={recipe.id}
               name={recipe.name}
               image={recipe.image}
-              categories={recipe.categories}
+              prepTime={recipe.preparationTime}
             />
           ))}
         </ul>

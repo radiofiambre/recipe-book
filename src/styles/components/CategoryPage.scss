@@ -1,44 +1,44 @@
-@use '../abstracts' as *;
-@use 'sass:map';
+// @use '../abstracts' as *;
+// @use 'sass:map';
 
 
 
-.CategoryPage_container {
-  margin: 30px 0px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  list-style: none;
-}
+// .CategoryPage_container {
+//   margin: 30px 0px;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: 10px;
+//   list-style: none;
+// }
 
 
 
-@include tablet {
-  .CategoryPage_container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
+// @include tablet {
+//   .CategoryPage_container {
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+// }
 
 
 
-@include notebook {
-  .CategoryPage_container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
+// @include notebook {
+//   .CategoryPage_container {
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+//   }
+// }
 
 
 
-@include large-screens {
-  .CategoryPage_container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-}
+// @include large-screens {
+//   .CategoryPage_container {
+//     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+//   }
+// }
 
 
 
-@include extra-large-screens {
-  .CategoryPage_container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  }
-}
+// @include extra-large-screens {
+//   .CategoryPage_container {
+//     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+//   }
+// }
