@@ -1,22 +1,21 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 @use "sass:map";
 
-
-
 .RecipePage {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
   display: flex;
   flex-direction: column;
 
   &_section {
-    padding: 30px 10px;
+    padding: 30px 0px;
   }
 
   &_top {
     margin-top: 0px;
     display: grid;
     margin-bottom: 40px;
+    justify-items: center;
   }
 
   &_bottom {
@@ -43,7 +42,6 @@
 
 .mainInfo {
   text-align: center;
-  margin: 20px;
   color: $dark-green;
 
   & span {
@@ -57,12 +55,34 @@
 }
 
 .image {
+  width: 85%;
   border-radius: 10px;
-  box-shadow: 35px 35px 0px 0px $white;
-  width: 90%;
+  box-shadow: 15px 15px 0px 0px $white;
 }
 
 
+
+// BIG-MOBILE
+
+@include big-mobile {
+  .Filter_container {
+    gap: 12px 30px;
+    margin-bottom: 30px;
+    &_eachFilter {
+      input:not([type="radio"]),
+      select {
+        padding: 3px 15px;
+      }
+    }
+  }
+  .image {
+    box-shadow: 20px 20px 0px 0px $white;
+  }
+}
+
+
+
+// TABLET
 
 @include tablet {
   .RecipePage {
@@ -76,27 +96,35 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    & span {
+      margin: 10px;
+    }
   }
 
   .image {
     margin: 0px 15px;
     border-radius: 10px;
-    width: 90%;
+    width: 70%;
     height: 400px;
     object-fit: cover;
+    box-shadow: 25px 25px 0px 0px $white;
   }
 }
 
 
 
+// NOTEBOOK
+
 @include notebook {
   .RecipePage {
-    margin-left: 10%;
-    margin-right: 10%;
+    &_section {
+      padding: 50px 0px;
+    }
 
     &_top {
       grid-template-columns: 2fr 3fr;
       margin-top: 40px;
+      gap: 40px;
     }
 
     &_bottom {
@@ -104,24 +132,41 @@
       grid-template-areas:
         "ingredients steps"
         "notes steps";
+      gap: 50px;
     }
+  }
+  .image {
+    width: 90%;
   }
 }
 
 
+
+// LARGE SCREENS
 
 @include large-screens {
   .RecipePage {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
+    margin-left: 10%;
+    margin-right: 10%;
+  
+  
+    &_top {
+      gap: 50px;
+    }
+
+    &_bottom {
+      gap: 70px;
+    }
+    }
 }
 
 
 
+// EXTRA-LARGE SCREENS
+
 @include extra-large-screens {
   .RecipePage {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }

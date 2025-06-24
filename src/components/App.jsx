@@ -26,17 +26,23 @@ function App() {
 
   // FILTERS
   const filterRecipes = recipeList
+    // order newer to older recipes
+    .sort((a, b) => b.id - a.id)
     // name
     .filter((recipe) =>
-      normalizeSearchText(recipe.name).includes(normalizeSearchText(recipeName))
+      recipe.name
+        ? normalizeSearchText(recipe.name).includes(
+            normalizeSearchText(recipeName)
+          )
+        : false
     )
     // category
     .filter((recipe) =>
-      category === "all" ? true : recipe.categories.includes(category)
+      category === "all" ? true : recipe.categories?.includes(category)
     )
     // mealTime
     .filter((recipe) =>
-      mealTime === "all" ? true : recipe.mealTimes.includes(mealTime)
+      mealTime === "all" ? true : recipe.mealTimes?.includes(mealTime)
     )
     // difficulty
     .filter((recipe) =>
@@ -45,6 +51,7 @@ function App() {
     // prepTime
     .filter((recipe) => {
       if (prepTime === "all") return true;
+      if (!recipe.preparationTime) return false;
       const prepTimeNumber = parseInt(
         recipe.preparationTime.match(/\d+/)?.[0] || 0
       );
@@ -63,11 +70,14 @@ function App() {
       }
     })
     // ingredients
-    .filter((recipe) =>
-      normalizeSearchText(recipe.ingredients.join(", ")).includes(
-        normalizeSearchText(ingredients)
-      )
-    )
+    .filter((recipe) => {
+      if (!ingredients) return true;
+      return recipe.ingredients?.length
+        ? normalizeSearchText(recipe.ingredients.join(", ")).includes(
+            normalizeSearchText(ingredients)
+          )
+        : false;
+    })
     // favorite
     .filter((recipe) => {
       if (favorite === "favorite") return recipe.isFavorite === true;

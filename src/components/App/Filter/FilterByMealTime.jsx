@@ -8,9 +8,7 @@ function FilterByMealTime({ setMealTime }) {
     </option>
   ));
 
-  // const handleSelect = (event) => setMealTime(event.target.value);
   const handleSelect = (event) => {
-    console.log("input value", event.target.value);
     setMealTime(event.target.value)
   };
 
