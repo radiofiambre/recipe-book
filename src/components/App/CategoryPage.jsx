@@ -4,9 +4,11 @@ import PropTypes from "prop-types";
 function CategoryPage({ category, recipeList }) {
   const { name } = category;
 
-  const filteredRecipesByCategory = recipeList.filter((recipe) =>
+  const filteredRecipesByCategory = recipeList
+  .filter((recipe) =>
     recipe.categories.includes(category.name)
-  );
+  )
+  .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <section className="CategoryPage">
