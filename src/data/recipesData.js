@@ -829,7 +829,7 @@ const recipesData = [
       "Pon 2cs de harina en un plato y enharina los trozos de calabacín, asegurándote de que todos los trozos quedan cubiertos con una capa de harina por ambos lados.",
       "Bate 1 huevo a continuación.",
       "Calienta una sartén a fuego medio o medio-bajo y añade una fina capa de aceite.",
-      "Ves rebozando los trozos de calabacín enharinados pasándolos por el huevo batido y ves añadiéndolos a la sartén.",
+      "Ve rebozando los trozos de calabacín enharinados pasándolos por el huevo batido y ve añadiéndolos a la sartén.",
       "Cocínalos unos 2 minutos o hasta que estén ligeramente dorados. Dales la vuelta y cocina 1-2 minutos extra (añade más aceite si es necesario).",
       "Prepara la salsa mezclando: 1cs de salsa soja, 1cs de vinagre blanco, 1cp de sésamo (opcional) y 1cp de ajos tiernos (opcional).",
       "¡Receta lista! Ya puedes servir este Hobak Jeon y disfrutarlo. Puedes comerlo solo junto con la salsa o acompañarlo con arroz blanco y algo de proteína, por ejemplo.",

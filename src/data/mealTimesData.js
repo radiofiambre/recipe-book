@@ -3,8 +3,7 @@ const mealTimesData = [
   { name: 'Almuerzo'},
   { name: 'Comida'},
   { name: 'Merienda'},
-  { name: 'Cena'},
-  { name: 'Aperitivo'}
+  { name: 'Cena'}
 ]
 
 export default mealTimesData;
