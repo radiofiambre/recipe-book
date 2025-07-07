@@ -4428,7 +4428,7 @@ const recipesData = [
   {
     id: 157,
     name: "Bocadillo de roast beef",
-    image: "bocadillo-de-roas-beef",
+    image: "bocadillo-de-roast-beef",
     categories: ["Tapas y aperitivos", "Carnes y aves"],
     difficulty: "Media",
     mealTimes: ["Comida", "Cena"],
