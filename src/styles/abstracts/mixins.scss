@@ -78,6 +78,9 @@
   border: 2px solid $main-color;
   transition: all 0.3s ease;
 
+  width: 30px;
+  height: 30px;
+
   &:hover {
     box-shadow: 0 2px 8px rgba($main-color, 0.3);
     transform: translateY(-1px);
@@ -85,12 +88,14 @@
 
   @include big-mobile {
     font-size: 1.4rem;
-    padding: 6px 12px;
+    width: 40px;
+    height: 40px;
   }
 
   @include tablet {
     font-size: 1.6rem;
-    padding: 7px 14px;
+    width: 45px;
+    height: 45px;
   }
 
   @include notebook {

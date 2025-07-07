@@ -1,6 +1,5 @@
- @use '../abstracts' as *;
+@use "../abstracts" as *;
 @use "sass:map";
-
 
 .recipeNotFoundMessage {
   text-align: center;
@@ -16,7 +15,7 @@
 
 .RecipeList_container {
   list-style: none;
-  margin: 20px 0px;  
+  margin: 20px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
@@ -25,12 +24,18 @@
 .RecipeList_loadMore {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 60px
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .RecipeList_loadMoreButton {
   @include round-button-style($cream, $yellow);
+}
+
+@include big-mobile {
+  .RecipeList_loadMore {
+    margin-top: 30px;
+  }
 }
 
 @include tablet {
@@ -38,25 +43,28 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
+  .RecipeList_loadMore {
+    margin-top: 35px;
+  }
 }
-
-
 
 @include notebook {
   .RecipeList_container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .RecipeList_loadMore {
+    margin-top: 45px;
+  }
 }
-
-
 
 @include large-screens {
   .RecipeList_container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
+  .RecipeList_loadMore {
+    margin-top: 60px;
+  }
 }
-
-
 
 @include extra-large-screens {
   .RecipeList_container {
