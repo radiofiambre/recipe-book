@@ -1,3 +1,11 @@
+import { useState } from "react";
+import { Route, Routes, matchPath, useLocation } from "react-router-dom";
+import { useRecipes } from '../hooks/useRecipes';
+
+import foodCategoriesList from "../data/foodCategoriesData";
+import createSlug from "../data/createSlug";
+import normalizeSearchText from "../data/normalizeSearchText";
+
 import Header from "./App/Header";
 import FoodCategories from "./App/FoodCategories";
 import Filter from "./App/Filter";
@@ -6,15 +14,9 @@ import Footer from "./App/Footer";
 import RecipePage from "./App/RecipePage";
 import CategoryPage from "./App/CategoryPage";
 
-import { useState } from "react";
-import { Route, Routes, matchPath, useLocation } from "react-router-dom";
-
-import recipeList from "../data/recipesData";
-import foodCategoriesList from "../data/foodCategoriesData";
-import createSlug from "../data/createSlug";
-import normalizeSearchText from "../data/normalizeSearchText";
-
 function App() {
+  const { recipes: recipeList, loading, error } = useRecipes();
+
   // Filter elements
   const [recipeName, setRecipeName] = useState("");
   const [category, setCategory] = useState("all");
@@ -99,6 +101,30 @@ function App() {
   const recipeRoute = matchPath("/recipe/:recipeId/:recipeName", pathname);
   const recipeId = recipeRoute ? recipeRoute.params.recipeId : "";
   const recipeFromList = recipeList.find((recipe) => recipe.id == recipeId);
+
+  if (loading) {
+    return (
+      <>
+        <Header />
+        <div style={{ textAlign: 'center', padding: '50px' }}>
+          Cargando recetas...
+        </div>
+        <Footer />
+      </>
+    );
+  }
+
+  if (error) {
+    return (
+      <>
+        <Header />
+        <div style={{ textAlign: 'center', padding: '50px', color: 'red' }}>
+          Error al cargar recetas: {error}
+        </div>
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>
