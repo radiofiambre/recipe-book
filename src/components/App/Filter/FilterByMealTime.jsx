@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import mealTimesData from "../../../data/mealTimesData";
+import mealTimesData from "../../../utils/mealTimesData";
 
 function FilterByMealTime({ setMealTime }) {
   const allMealTimes = mealTimesData.map((mealTimeData, index) => (

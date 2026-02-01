@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import difficultyLevelsData from "../../../data/difficultyLevelsData";
+import difficultyLevelsData from "../../../utils/difficultyLevelsData";
 
 function FilterByDifficulty({ setDifficulty }) {
   const allDifficultyLevels = difficultyLevelsData.map(

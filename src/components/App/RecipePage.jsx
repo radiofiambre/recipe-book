@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import recipeImages from "../../assets/recipes";
+import { getRecipeImageUrl } from "../../utils/getRecipeImageUrl"
 
 function RecipePage({ recipe }) {
   const {
@@ -13,7 +13,9 @@ function RecipePage({ recipe }) {
     notes,
     source,
   } = recipe;
-
+  
+  const imageUrl = getRecipeImageUrl(image)
+  
   return (
     <div className="RecipePage">
       <div className="RecipePage_top">
@@ -29,7 +31,7 @@ function RecipePage({ recipe }) {
             </a>
           ) : null}
         </section>
-        <img className="image" alt="" src={recipeImages[image]} />
+        <img className="image" alt="" src={imageUrl} />
       </div>
       <div className="RecipePage_bottom">
         <section className="RecipePage_section">

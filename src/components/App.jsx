@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Route, Routes, matchPath, useLocation } from "react-router-dom";
 import { useRecipes } from '../hooks/useRecipes';
 
-import foodCategoriesList from "../data/foodCategoriesData";
-import createSlug from "../data/createSlug";
-import normalizeSearchText from "../data/normalizeSearchText";
+import foodCategoriesList from "../utils/foodCategoriesData";
+import createSlug from "../utils/createSlug";
+import normalizeSearchText from "../utils/normalizeSearchText";
 
 import Header from "./App/Header";
 import FoodCategories from "./App/FoodCategories";
