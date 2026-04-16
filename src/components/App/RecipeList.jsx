@@ -43,7 +43,7 @@ function RecipeList({ recipeList }) {
 
   // Función para cargar más recetas (2 filas adicionales)
   const loadMoreRecipes = () => {
-    setVisibleRecipes(prev => prev + (recipesPerRow * 2));
+    setVisibleRecipes(prev => prev + (recipesPerRow * 5));
   };
 
   // Recetas a mostrar
